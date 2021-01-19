@@ -1,2 +1,3 @@
 john,santos,john.santos2@ucalgary.ca,JohnVSantos,2021_ENCM369
 Marcelo,Li_Gonzales,marcelo.ligonzales@ucalgary.ca, MarceloLiGonzales,ENCM369
+Zachary,Tigchelaar,zachary.tigchelaar@ucalgary.ca,jzactmbk,ENCM369

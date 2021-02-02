@@ -94,8 +94,17 @@ Promises:
 */
 void UserAppRun(void)
 {
-
-
+    static u8 u8Counter = 0x00;
+    while(u8Counter <= 0x10) 
+  {
+    u8Counter += 0x01;
+    PORTA = u8Counter;
+    
+    for(u32 u32Counter = 800000; u32Counter > 0; u32Counter--)
+    {
+        
+    }
+  }
 } /* end UserAppRun */
 
 

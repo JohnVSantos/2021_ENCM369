@@ -27315,12 +27315,12 @@ void UserAppInitialize(void)
 # 95 "user_app.c"
 void UserAppRun(void)
 {
-    static u8 u8Counter = 0x00;
-    while(u8Counter <= 0x10)
-  {
-    u8Counter += 0x01;
-    PORTA = u8Counter;
 
+    static u8 u6Counter = 0b10000000;
+    while(u6Counter <= 0b11110000)
+  {
+    u6Counter += 0b00000001;
+    LATA = u6Counter;
     for(u32 u32Counter = 800000; u32Counter > 0; u32Counter--)
     {
 

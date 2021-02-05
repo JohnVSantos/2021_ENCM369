@@ -27316,5 +27316,14 @@ void UserAppInitialize(void)
 void UserAppRun(void)
 {
 
+    static u8 u6Counter = 0b10000000;
+    while(u6Counter <= 0b11110000)
+  {
+    u6Counter += 0b00000001;
+    LATA = u6Counter;
+    for(u32 u32Counter = 800000; u32Counter > 0; u32Counter--)
+    {
 
+    }
+  }
 }

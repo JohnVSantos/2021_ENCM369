@@ -2546,52 +2546,59 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _UserAppRun ]
 [f ]
+"97
+[; ;user_app.c: 97:  int counter = 0;
+[v _counter `i ~T0 @X0 1 a ]
+[e = _counter -> 0 `i ]
 "98
-[; ;user_app.c: 98:     static u8 u6Counter = 0b10000000;
-[v F15920 `uc ~T0 @X0 1 s u6Counter ]
-[i F15920
--> -> 128 `i `uc
+[; ;user_app.c: 98:  static u32 u32Counter = 0b10000000;
+[v F15921 `ul ~T0 @X0 1 s u32Counter ]
+[i F15921
+-> -> -> 128 `i `l `ul
 ]
 "99
-[; ;user_app.c: 99:     while(u6Counter <= 0b11110000)
+[; ;user_app.c: 99:  while(counter <= 64)
 [e $U 2274  ]
 [e :U 2275 ]
 "100
-[; ;user_app.c: 100:   {
+[; ;user_app.c: 100:  {
 {
 "101
-[; ;user_app.c: 101:     u6Counter += 0b00000001;
-[e =+ F15920 -> -> 1 `i `uc ]
+[; ;user_app.c: 101:   u32Counter += 0b00000001;
+[e =+ F15921 -> -> -> 1 `i `l `ul ]
 "102
-[; ;user_app.c: 102:     LATA = u6Counter;
-[e = _LATA F15920 ]
+[; ;user_app.c: 102:   LATA = u32Counter;
+[e = _LATA -> F15921 `uc ]
 "103
-[; ;user_app.c: 103:     for(u32 u32Counter = 800000; u32Counter > 0; u32Counter--)
+[; ;user_app.c: 103:   counter++;
+[e ++ _counter -> 1 `i ]
+"104
+[; ;user_app.c: 104:   for(u32 u32Counter = 800000; u32Counter > 0; u32Counter--)
 {
 [v _u32Counter `ul ~T0 @X0 1 a ]
 [e = _u32Counter -> -> 800000 `l `ul ]
 [e $ > _u32Counter -> -> -> 0 `i `l `ul 2277  ]
 [e $U 2278  ]
 [e :U 2277 ]
-"104
-[; ;user_app.c: 104:     {
+"105
+[; ;user_app.c: 105:   {
 {
-"106
-[; ;user_app.c: 106:     }
+"107
+[; ;user_app.c: 107:   }
 }
 [e -- _u32Counter -> -> -> 1 `i `l `ul ]
 [e $ > _u32Counter -> -> -> 0 `i `l `ul 2277  ]
 [e :U 2278 ]
 }
-"107
-[; ;user_app.c: 107:   }
+"108
+[; ;user_app.c: 108:  }
 }
 [e :U 2274 ]
 "99
-[; ;user_app.c: 99:     while(u6Counter <= 0b11110000)
-[e $ <= -> F15920 `i -> 240 `i 2275  ]
+[; ;user_app.c: 99:  while(counter <= 64)
+[e $ <= _counter -> 64 `i 2275  ]
 [e :U 2276 ]
-"108
-[; ;user_app.c: 108: }
+"109
+[; ;user_app.c: 109: }
 [e :UE 2273 ]
 }

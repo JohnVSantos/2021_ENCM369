@@ -31,9 +31,9 @@
 [v _ClockSetup ClockSetup `(v  1 e 1 0 ]
 "89
 [v _GpioSetup GpioSetup `(v  1 e 1 0 ]
-"110
+"109
 [v _SysTickSetup SysTickSetup `(v  1 e 1 0 ]
-"132
+"131
 [v _SystemSleep SystemSleep `(v  1 e 1 0 ]
 "35 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\main.c
 [v _main main `(v  1 e 1 0 ]
@@ -66,31 +66,33 @@
 "95 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
 {
-"103
-[v UserAppRun@u32Counter u32Counter `ul  1 a 4 0 ]
+"104
+[v UserAppRun@u32Counter_63 u32Counter `ul  1 a 4 2 ]
+"97
+[v UserAppRun@counter counter `i  1 a 2 0 ]
 "98
-[v UserAppRun@u6Counter u6Counter `uc  1 s 1 u6Counter ]
-"108
+[v UserAppRun@u32Counter u32Counter `ul  1 s 4 u32Counter ]
+"109
 } 0
 "76
 [v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
 {
 "80
 } 0
-"132 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\encm369_pic18.c
+"131 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\encm369_pic18.c
 [v _SystemSleep SystemSleep `(v  1 e 1 0 ]
 {
-"135
+"134
 } 0
-"110
+"109
 [v _SysTickSetup SysTickSetup `(v  1 e 1 0 ]
 {
-"115
+"114
 } 0
 "89
 [v _GpioSetup GpioSetup `(v  1 e 1 0 ]
 {
-"95
+"94
 } 0
 "70
 [v _ClockSetup ClockSetup `(v  1 e 1 0 ]

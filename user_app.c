@@ -94,14 +94,14 @@ Promises:
 */
 void UserAppRun(void)
 {
- static u8 u8Counter = 0b10000000; //Counter Initialization
- while(u8Counter <= 0b11110000)    
+ u32 u32Counter = 0b10000000; //Counter Initialization
+ while(u32Counter <= 0b11111111)    
  {
-  u8Counter += 0b00000001;
-  LATA = u8Counter;
+  u32Counter++;
+  LATA = u32Counter;
   for(u32 u32Counter = 800000; u32Counter > 0; u32Counter--)
   {
-
+      
   }
  }
 } /* end UserAppRun */

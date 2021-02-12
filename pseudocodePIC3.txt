@@ -1,0 +1,19 @@
+PseudoCode - PIC Activity 3
+
+void GpioSetup(void)
+{
+-Initialize register: PORTA, so that RA7 turns on
+-Initialize register: TRISA
+-Initialize register: ANSELA
+}
+
+void UserAppRun(void)
+{
+-Initialize Counter so that all the other bits are off except for bit 7 (RA7).
+	while(Stop when RA5 turns on (0001 0000))
+	{
+	-Increment Counter by 1
+	-Initialize LATA equal to the counter
+	-Delay loop that burns 250ms
+	}
+}

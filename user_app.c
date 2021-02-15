@@ -94,7 +94,7 @@ Promises:
 */
 void UserAppRun(void)
 {
-
+    LATA;
 
 } /* end UserAppRun */
 

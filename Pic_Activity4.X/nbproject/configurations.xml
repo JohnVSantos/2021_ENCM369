@@ -38,7 +38,7 @@
         <targetDevice>PIC18F27Q43</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>pk4hybrid</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>2.31</languageToolchainVersion>
         <platform>3</platform>
@@ -203,6 +203,8 @@
         <property key="memories.programmemory.ranges" value="0-1ffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="true"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/johns/Desktop/2ndYear2ndSem/ENCM369/PIC_Activity1/JohnVSantos/2021_ENCM369/Pic_Activity4.X/debug/default/Pic_Activity4_ptg"/>
         <property key="programmerToGoImageName" value="Pic_Activity4_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>

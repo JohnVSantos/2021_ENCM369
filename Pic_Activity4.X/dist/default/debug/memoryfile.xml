@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\Pic_Activity4.X.production.hex">
+  <executable name="dist/default/debug\Pic_Activity4.X.debug.hex">
     <memory name="program">
       <units>bytes</units>
       <length>131072</length>
-      <used>240</used>
-      <free>130832</free>
+      <used>306</used>
+      <free>130766</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>8448</length>
-      <used>17</used>
-      <free>8431</free>
+      <used>21</used>
+      <free>8427</free>
     </memory>
   </executable>
 </project>

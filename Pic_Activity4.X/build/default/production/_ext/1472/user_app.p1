@@ -1,5 +1,8 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"45585 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
+"46157 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
+[; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 46157: extern volatile unsigned char PORTB __attribute__((address(0x4CF)));
+[v _PORTB `Vuc ~T0 @X0 0 e@1231 ]
+"45585
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 45585: extern volatile unsigned char LATA __attribute__((address(0x4BE)));
 [v _LATA `Vuc ~T0 @X0 0 e@1214 ]
 "30 ../configuration.h
@@ -2547,9 +2550,51 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _UserAppRun ]
 [f ]
 "97
-[; ;../user_app.c: 97:     LATA;
-[e _LATA ]
+[; ;../user_app.c: 97:  static u32 u32Counter = 0x80;
+[v F15920 `ul ~T0 @X0 1 s u32Counter ]
+[i F15920
+-> -> -> 128 `i `l `ul
+]
 "99
-[; ;../user_app.c: 99: }
+[; ;../user_app.c: 99:  if ((PORTB & 0x20) == 0x20)
+[e $ ! == & -> _PORTB `i -> 32 `i -> 32 `i 2274  ]
+"100
+[; ;../user_app.c: 100:  {
+{
+"101
+[; ;../user_app.c: 101:   LATA = u32Counter;
+[e = _LATA -> F15920 `uc ]
+"102
+[; ;../user_app.c: 102:   if (u32Counter < 0xBF)
+[e $ ! < F15920 -> -> -> 191 `i `l `ul 2275  ]
+"103
+[; ;../user_app.c: 103:   {
+{
+"105
+[; ;../user_app.c: 105:    u32Counter++;
+[e ++ F15920 -> -> -> 1 `i `l `ul ]
+"107
+[; ;../user_app.c: 107:   }
+}
+[e $U 2276  ]
+"108
+[; ;../user_app.c: 108:   else
+[e :U 2275 ]
+"109
+[; ;../user_app.c: 109:   {
+{
+"111
+[; ;../user_app.c: 111:     u32Counter = 0x80;
+[e = F15920 -> -> -> 128 `i `l `ul ]
+"113
+[; ;../user_app.c: 113:   }
+}
+[e :U 2276 ]
+"115
+[; ;../user_app.c: 115:  }
+}
+[e :U 2274 ]
+"118
+[; ;../user_app.c: 118: }
 [e :UE 2273 ]
 }

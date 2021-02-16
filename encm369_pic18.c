@@ -88,8 +88,11 @@ Promises:
 */
 void GpioSetup(void)
 {
-  
-  
+    LATA = 0x80;        //SET RA7 to turn on.
+    TRISB = 0x20;       //SET RB5 as input.
+    TRISA = 0x00;       //SET PORTA as output.
+    ANSELA = 0x00;      //SET to digital
+    ANSELB = 0x00;      //SET to digital
 } /* end GpioSetup() */
 
 

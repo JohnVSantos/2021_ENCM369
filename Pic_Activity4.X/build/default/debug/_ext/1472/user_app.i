@@ -27319,19 +27319,30 @@ void UserAppRun(void)
 
  if ((PORTB & 0x20) == 0x20)
  {
-  LATA = u32Counter;
-  if (u32Counter < 0xBF)
+
+  for(u32 u32Count = 7000; u32Count > 0; u32Count--)
   {
 
-   u32Counter++;
-
   }
-  else
+
+  if ((PORTB & 0x20) != 0x20)
   {
 
-    u32Counter = 0x80;
+    if (u32Counter < 0xBF)
+    {
+        LATA = u32Counter;
+        u32Counter++;
+    }
 
-  }
+    else
+    {
+
+        u32Counter = 0x80;
+        LATA = u32Counter;
+
+    }
+
+   }
 
  }
 

@@ -94,8 +94,38 @@ Promises:
 */
 void UserAppRun(void)
 {
-    LATA;
+ static u32 u32Counter = 0x80; //Counter Initialization
 
+ if ((PORTB & 0x20) == 0x20)
+ {
+     
+  for(u32 u32Count = 7000; u32Count > 0; u32Count--)
+  {
+      
+  }
+  
+  if ((PORTB & 0x20) != 0x20) 
+  {
+      
+    if (u32Counter < 0xBF) 
+    {
+        LATA = u32Counter;
+        u32Counter++;   
+    }
+    
+    else
+    {
+      
+        u32Counter = 0x80;  
+        LATA = u32Counter;
+ 
+    }
+    
+   }   
+  
+ }
+ 
+ 
 } /* end UserAppRun */
 
 

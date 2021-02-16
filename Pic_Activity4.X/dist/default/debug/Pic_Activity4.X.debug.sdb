@@ -69,9 +69,11 @@
 "95 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
 {
+"102
+[v UserAppRun@u32Count u32Count `ul  1 a 4 0 ]
 "97
 [v UserAppRun@u32Counter u32Counter `ul  1 s 4 u32Counter ]
-"118
+"129
 } 0
 "76
 [v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]

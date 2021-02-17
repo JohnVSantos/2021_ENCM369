@@ -109,8 +109,8 @@ void UserAppRun(void)
       
     if (u32Counter < 0xBF) 
     {
+        u32Counter++;
         LATA = u32Counter;
-        u32Counter++;   
     }
     
     else

@@ -95,18 +95,20 @@ Promises:
 void UserAppRun(void)
 {
  static u32 u32Counter = 0x80; //Counter Initialization
-
+ 
+ //Represents a button being pressed.
  if ((PORTB & 0x20) == 0x20)
  {
-     
-  for(u32 u32Count = 7000; u32Count > 0; u32Count--)
-  {
+  
+  //Delay represents approximately how long it takes for a button to be pressed and released.
+  for(u32 u32Count = 7000; u32Count > 0; u32Count--) 
+  {                                                 
       
   }
-  
+  //Represents a button being released.
   if ((PORTB & 0x20) != 0x20) 
   {
-      
+     
     if (u32Counter < 0xBF) 
     {
   

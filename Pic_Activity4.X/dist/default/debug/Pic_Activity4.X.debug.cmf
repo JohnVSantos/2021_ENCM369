@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\johns\AppData\Local\Temp\sjv0.o
+$C:\Users\johns\AppData\Local\Temp\sj14.o
 idloc IDLOC 5 200000 200000 20 1
 init CODE 0 1FFFC 1FFFC 4 1
 reset_vec CODE 0 0 0 4 1
@@ -119,12 +119,12 @@ $dist/default/debug\Pic_Activity4.X.debug.o
 1FF88 text1 CODE >105:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
 1FFA8 text1 CODE >107:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
 1FFB6 text1 CODE >110:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
-1FFD0 text1 CODE >112:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
-1FFD6 text1 CODE >113:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
-1FFE2 text1 CODE >114:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
-1FFE6 text1 CODE >119:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
-1FFF6 text1 CODE >120:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
-1FFFA text1 CODE >129:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
+1FFD0 text1 CODE >113:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
+1FFDC text1 CODE >114:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
+1FFE2 text1 CODE >116:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
+1FFE6 text1 CODE >121:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
+1FFF6 text1 CODE >122:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
+1FFFA text1 CODE >131:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/user_app.c
 1FF16 text0 CODE >35:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/main.c
 1FF16 text0 CODE >37:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/main.c
 1FF18 text0 CODE >40:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/main.c
@@ -133,32 +133,32 @@ $dist/default/debug\Pic_Activity4.X.debug.o
 1FF24 text0 CODE >47:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/main.c
 1FF28 text0 CODE >57:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/main.c
 1FF2C text0 CODE >62:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369/main.c
-1FF38 cinit CODE >5097:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF38 cinit CODE >5099:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF38 cinit CODE >5102:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF38 cinit CODE >5132:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF3A cinit CODE >5133:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF3C cinit CODE >5134:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF3E cinit CODE >5135:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF40 cinit CODE >5136:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF42 cinit CODE >5137:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF44 cinit CODE >5138:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF48 cinit CODE >5139:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF4C cinit CODE >5140:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF4C cinit CODE >5141:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF4E cinit CODE >5142:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF52 cinit CODE >5143:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF54 cinit CODE >5144:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF56 cinit CODE >5145:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF58 cinit CODE >5149:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF5C cinit CODE >5150:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF5E cinit CODE >5151:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF5E cinit CODE >5152:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF60 cinit CODE >5153:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF62 cinit CODE >5154:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF64 cinit CODE >5160:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF64 cinit CODE >5162:C:\Users\johns\AppData\Local\Temp\sjv0.s
-1FF66 cinit CODE >5163:C:\Users\johns\AppData\Local\Temp\sjv0.s
+1FF38 cinit CODE >5097:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF38 cinit CODE >5099:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF38 cinit CODE >5102:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF38 cinit CODE >5132:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF3A cinit CODE >5133:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF3C cinit CODE >5134:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF3E cinit CODE >5135:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF40 cinit CODE >5136:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF42 cinit CODE >5137:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF44 cinit CODE >5138:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF48 cinit CODE >5139:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF4C cinit CODE >5140:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF4C cinit CODE >5141:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF4E cinit CODE >5142:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF52 cinit CODE >5143:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF54 cinit CODE >5144:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF56 cinit CODE >5145:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF58 cinit CODE >5149:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF5C cinit CODE >5150:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF5E cinit CODE >5151:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF5E cinit CODE >5152:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF60 cinit CODE >5153:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF62 cinit CODE >5154:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF64 cinit CODE >5160:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF64 cinit CODE >5162:C:\Users\johns\AppData\Local\Temp\sj14.s
+1FF66 cinit CODE >5163:C:\Users\johns\AppData\Local\Temp\sj14.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -177,23 +177,23 @@ __Hspace_1 516 0 ABS 0 - dist/default/debug\Pic_Activity4.X.debug.o
 __Hspace_2 0 0 ABS 0 - dist/default/debug\Pic_Activity4.X.debug.o
 __Hspace_4 60000A 0 ABS 0 - dist/default/debug\Pic_Activity4.X.debug.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\Pic_Activity4.X.debug.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\johns\AppData\Local\Temp\sjv0.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\johns\AppData\Local\Temp\sj14.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\Pic_Activity4.X.debug.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug\Pic_Activity4.X.debug.o
 _LATA 4BE 0 ABS 0 - dist/default/debug\Pic_Activity4.X.debug.o
-___sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\sjv0.o
+___sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\sj14.o
 _main 1FF16 0 CODE 0 text0 dist/default/debug\Pic_Activity4.X.debug.o
-start 1FFFC 0 CODE 0 init C:\Users\johns\AppData\Local\Temp\sjv0.o
+start 1FFFC 0 CODE 0 init C:\Users\johns\AppData\Local\Temp\sj14.o
 __size_of_main 0 0 ABS 0 - dist/default/debug\Pic_Activity4.X.debug.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\Pic_Activity4.X.debug.o
 __size_of_SystemSleep 0 0 ABS 0 - dist/default/debug\Pic_Activity4.X.debug.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/debug\Pic_Activity4.X.debug.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\Pic_Activity4.X.debug.o
-__accesstop 560 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\sjv0.o
-intlevel0 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\sjv0.o
-intlevel1 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\sjv0.o
-intlevel2 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\sjv0.o
-intlevel3 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\sjv0.o
+__accesstop 560 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\sj14.o
+intlevel0 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\sj14.o
+intlevel1 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\sj14.o
+intlevel2 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\sj14.o
+intlevel3 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\sj14.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\Pic_Activity4.X.debug.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\Pic_Activity4.X.debug.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/debug\Pic_Activity4.X.debug.o
@@ -203,8 +203,8 @@ _UserAppRun 1FF6A 0 CODE 0 text1 dist/default/debug\Pic_Activity4.X.debug.o
 _ANSELA 400 0 ABS 0 - dist/default/debug\Pic_Activity4.X.debug.o
 _ANSELB 408 0 ABS 0 - dist/default/debug\Pic_Activity4.X.debug.o
 _G_u32SystemTime1s 505 0 COMRAM 1 bssCOMRAM dist/default/debug\Pic_Activity4.X.debug.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\sjv0.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\sjv0.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\sj14.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\sj14.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\Pic_Activity4.X.debug.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\Pic_Activity4.X.debug.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\Pic_Activity4.X.debug.o
@@ -266,7 +266,7 @@ __Hbank36 0 0 ABS 0 bank36 dist/default/debug\Pic_Activity4.X.debug.o
 __Hbank37 0 0 ABS 0 bank37 dist/default/debug\Pic_Activity4.X.debug.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\Pic_Activity4.X.debug.o
 __Hbigram 0 0 ABS 0 bigram dist/default/debug\Pic_Activity4.X.debug.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\johns\AppData\Local\Temp\sjv0.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\johns\AppData\Local\Temp\sj14.o
 _SystemSleep 1FED4 0 CODE 0 text3 dist/default/debug\Pic_Activity4.X.debug.o
 __Hcomram 0 0 ABS 0 comram dist/default/debug\Pic_Activity4.X.debug.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/debug\Pic_Activity4.X.debug.o
@@ -361,8 +361,8 @@ __end_of_SysTickSetup 1FF16 0 CODE 0 text4 dist/default/debug\Pic_Activity4.X.de
 _UserAppInitialize 1FED6 0 CODE 0 text2 dist/default/debug\Pic_Activity4.X.debug.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\Pic_Activity4.X.debug.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/debug\Pic_Activity4.X.debug.o
-stackhi 25FF 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\sjv0.o
-stacklo 560 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\sjv0.o
+stackhi 25FF 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\sj14.o
+stacklo 560 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\sj14.o
 __Lirdata 0 0 CODE 0 irdata dist/default/debug\Pic_Activity4.X.debug.o
 __Lspace_0 0 0 ABS 0 - dist/default/debug\Pic_Activity4.X.debug.o
 __Lspace_1 0 0 ABS 0 - dist/default/debug\Pic_Activity4.X.debug.o
@@ -385,7 +385,7 @@ __ptext4 1FEF4 0 CODE 0 text4 dist/default/debug\Pic_Activity4.X.debug.o
 __ptext5 1FEDC 0 CODE 0 text5 dist/default/debug\Pic_Activity4.X.debug.o
 __ptext6 1FED2 0 CODE 0 text6 dist/default/debug\Pic_Activity4.X.debug.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/debug\Pic_Activity4.X.debug.o
-__ramtop 2600 0 RAM 0 ramtop C:\Users\johns\AppData\Local\Temp\sjv0.o
+__ramtop 2600 0 RAM 0 ramtop C:\Users\johns\AppData\Local\Temp\sj14.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/debug\Pic_Activity4.X.debug.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\Pic_Activity4.X.debug.o
 _ClockSetup 1FED2 0 CODE 0 text6 dist/default/debug\Pic_Activity4.X.debug.o

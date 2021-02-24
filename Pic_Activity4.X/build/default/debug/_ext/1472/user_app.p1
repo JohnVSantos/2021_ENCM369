@@ -2591,41 +2591,41 @@ Version 4.0 HI-TECH Software Intermediate Code
 "111
 [; ;../user_app.c: 111:     {
 {
-"112
-[; ;../user_app.c: 112:         LATA = u32Counter;
-[e = _LATA -> F15920 `uc ]
 "113
 [; ;../user_app.c: 113:         u32Counter++;
 [e ++ F15920 -> -> -> 1 `i `l `ul ]
 "114
-[; ;../user_app.c: 114:     }
+[; ;../user_app.c: 114:         LATA = u32Counter;
+[e = _LATA -> F15920 `uc ]
+"116
+[; ;../user_app.c: 116:     }
 }
 [e $U 2280  ]
-"116
-[; ;../user_app.c: 116:     else
+"118
+[; ;../user_app.c: 118:     else
 [e :U 2279 ]
-"117
-[; ;../user_app.c: 117:     {
-{
 "119
-[; ;../user_app.c: 119:         u32Counter = 0x80;
+[; ;../user_app.c: 119:     {
+{
+"121
+[; ;../user_app.c: 121:         u32Counter = 0x80;
 [e = F15920 -> -> -> 128 `i `l `ul ]
-"120
-[; ;../user_app.c: 120:         LATA = u32Counter;
-[e = _LATA -> F15920 `uc ]
 "122
-[; ;../user_app.c: 122:     }
+[; ;../user_app.c: 122:         LATA = u32Counter;
+[e = _LATA -> F15920 `uc ]
+"124
+[; ;../user_app.c: 124:     }
 }
 [e :U 2280 ]
-"124
-[; ;../user_app.c: 124:    }
+"126
+[; ;../user_app.c: 126:    }
 }
 [e :U 2278 ]
-"126
-[; ;../user_app.c: 126:  }
+"128
+[; ;../user_app.c: 128:  }
 }
 [e :U 2274 ]
-"129
-[; ;../user_app.c: 129: }
+"131
+[; ;../user_app.c: 131: }
 [e :UE 2273 ]
 }

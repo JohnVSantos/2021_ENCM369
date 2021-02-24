@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Mon Feb 15 20:37:50 2021
+                                                                                               Wed Feb 24 12:43:10 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	18F27Q43
@@ -341,22 +341,22 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    305  01FFCC  EFF3  F0FF         	goto	l768
    306  01FFD0                     u40:
    307  01FFD0                     
-   308                           ;../user_app.c: 111:     {;../user_app.c: 112:         LATA = u32Counter;
-   309  01FFD0  0061  F438  F4BE   	movff	UserAppRun@u32Counter,1214	;volatile
-   310  01FFD6                     
-   311                           ;../user_app.c: 113:         u32Counter++;
-   312  01FFD6  0E01               	movlw	1
-   313  01FFD8  260E               	addwf	UserAppRun@u32Counter^(0+1280),f,c
-   314  01FFDA  0E00               	movlw	0
-   315  01FFDC  220F               	addwfc	(UserAppRun@u32Counter+1)^(0+1280),f,c
-   316  01FFDE  2210               	addwfc	(UserAppRun@u32Counter+2)^(0+1280),f,c
-   317  01FFE0  2211               	addwfc	(UserAppRun@u32Counter+3)^(0+1280),f,c
+   308                           ;../user_app.c: 111:     {;../user_app.c: 113:         u32Counter++;
+   309  01FFD0  0E01               	movlw	1
+   310  01FFD2  260E               	addwf	UserAppRun@u32Counter^(0+1280),f,c
+   311  01FFD4  0E00               	movlw	0
+   312  01FFD6  220F               	addwfc	(UserAppRun@u32Counter+1)^(0+1280),f,c
+   313  01FFD8  2210               	addwfc	(UserAppRun@u32Counter+2)^(0+1280),f,c
+   314  01FFDA  2211               	addwfc	(UserAppRun@u32Counter+3)^(0+1280),f,c
+   315  01FFDC                     
+   316                           ;../user_app.c: 114:         LATA = u32Counter;
+   317  01FFDC  0061  F438  F4BE   	movff	UserAppRun@u32Counter,1214	;volatile
    318                           
-   319                           ;../user_app.c: 114:     }
+   319                           ;../user_app.c: 116:     }
    320  01FFE2  EFFD  F0FF         	goto	l72
    321  01FFE6                     l768:
    322                           
-   323                           ;../user_app.c: 117:     {;../user_app.c: 119:         u32Counter = 0x80;
+   323                           ;../user_app.c: 119:     {;../user_app.c: 121:         u32Counter = 0x80;
    324  01FFE6  0E80               	movlw	128
    325  01FFE8  6E0E               	movwf	UserAppRun@u32Counter^(0+1280),c
    326  01FFEA  0E00               	movlw	0
@@ -366,7 +366,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    330  01FFF2  0E00               	movlw	0
    331  01FFF4  6E11               	movwf	(UserAppRun@u32Counter+3)^(0+1280),c
    332  01FFF6                     
-   333                           ;../user_app.c: 120:         LATA = u32Counter;
+   333                           ;../user_app.c: 122:         LATA = u32Counter;
    334  01FFF6  0E80               	movlw	128
    335  01FFF8  6EBE               	movwf	190,c	;volatile
    336  01FFFA                     l72:
@@ -1204,7 +1204,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Mon Feb 15 20:37:50 2021
+Symbol Table                                                                                   Wed Feb 24 12:43:10 2021
 
      __size_of_SysTickSetup 0022                          l20 FEF2                          l23 FF14  
                         l17 FED2                          l26 FED4                          l61 FED6  
@@ -1214,7 +1214,7 @@ Symbol Table                                                                    
                         u41 FFCC                         l800 FF2C                         l760 FF88  
                        l752 FF6A                         l770 FFF6                         l762 FFB6  
                        l754 FF78                         l748 FEDC                         l764 FFD0  
-                       l766 FFD6                         l790 FF18                         l768 FFE6  
+                       l766 FFDC                         l790 FF18                         l768 FFE6  
                        l792 FF1C                         l786 FEF4                         l794 FF20  
                        l796 FF24                         l788 FF16                         l798 FF28  
                        wreg 0004E8                        _LATA 0004BE                        _main FF16  

@@ -119,7 +119,7 @@ void UserAppRun(void)
     u32 u32Counter = PORTA; 
 
     //Use a bitmask and bitwise operation to clear the 6 LSBs
-    u32Counter &= 0xC0;
+    u32Counter &= 0x3F;
     
     while(u32Counter <= 0xBF)    
     {
@@ -128,8 +128,13 @@ void UserAppRun(void)
 
      //Write the temporary variable back to LATA
      LATA = u32Counter;
+     
+     for(u32 u32Counter = 0; u32Counter < 4000; u32Counter++) 
+        {
+
+        }
     }
-    
+       
 } /* end UserAppRun */
 
 /*--------------------------------------------------------------------
@@ -177,6 +182,7 @@ void TimeXus(u16 u16Time)
     
   //4) Start the timer
        //DEBUG AND WATCH
+       
       
 } /* end TimeXus () */
 

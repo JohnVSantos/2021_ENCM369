@@ -27331,7 +27331,7 @@ void UserAppRun(void)
     u32 u32Counter = PORTA;
 
 
-    u32Counter &= 0xC0;
+    u32Counter &= 0x3F;
 
     while(u32Counter <= 0xBF)
     {
@@ -27340,13 +27340,18 @@ void UserAppRun(void)
 
 
      LATA = u32Counter;
+
+     for(u32 u32Counter = 0; u32Counter < 4000; u32Counter++)
+        {
+
+        }
     }
 
 }
-# 146 "user_app.c"
+# 151 "user_app.c"
 void TimeXus(u16 u16Time)
 {
-# 160 "user_app.c"
+# 165 "user_app.c"
      T0CON0 &= 0x7F;
 
 
@@ -27364,6 +27369,7 @@ void TimeXus(u16 u16Time)
 
        PIR3 &= 0x7F;
        T0CON0 |= 0x80;
+
 
 
 

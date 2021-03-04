@@ -62,10 +62,14 @@ void main(void)
     SystemSleep();
     
     //Wait 1ms which is 1000us
+   
     TimeXus(1000);
-    
+    while((PIR3 & 0x80) == 0x00)
+    {
+        
+    }
     //Set TMR0IF after 1000us
-    PIR3 |= 0x80;
+    //PIR3 |= 0x80;
     
     HEARTBEAT_ON();
     

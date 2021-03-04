@@ -27310,21 +27310,35 @@ extern volatile u32 G_u32SystemFlags;
 void UserAppInitialize(void)
 {
 
+    LATA = 0x80;
+# 91 "user_app.c"
+    T0CON0 = 0x90;
+
+
+
+
+
+
+    T0CON1 = 0x54;
 
 }
-# 95 "user_app.c"
+# 115 "user_app.c"
 void UserAppRun(void)
 {
- int counter = 0;
- static u32 u32Counter = 0b10000000;
- while(counter <= 64)
+
+ u32 u32Counter = PORTA;
+
+ while(u32Counter <= 0xBF)
  {
-  u32Counter += 0b00000001;
+
+  u32Counter++;
   LATA = u32Counter;
-  counter++;
+
+
   for(u32 u32Counter = 800000; u32Counter > 0; u32Counter--)
   {
 
   }
+
  }
 }

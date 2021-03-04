@@ -2556,7 +2556,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _GpioSetup ]
 [f ]
 "91
-[; ;encm369_pic18.c: 91:     PORTA = 0b10000000;
+[; ;encm369_pic18.c: 91:     PORTA = 0x80;
 [e = _PORTA -> -> 128 `i `uc ]
 "92
 [; ;encm369_pic18.c: 92:     TRISA = 0x00;

@@ -39,9 +39,12 @@
 [v _main main `(v  1 e 1 0 ]
 "76 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
 [v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
-"95
+"115
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
-"37918 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
+"22627 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @794 ]
+"22725
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @795 ]
 "37918
 [v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
 "45585
@@ -63,21 +66,19 @@
 {
 "67
 } 0
-"95 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+"115 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
 {
-"104
-[v UserAppRun@u32Counter_63 u32Counter `ul  1 a 4 2 ]
-"97
-[v UserAppRun@counter counter `i  1 a 2 0 ]
-"98
-[v UserAppRun@u32Counter u32Counter `ul  1 s 4 u32Counter ]
-"109
+"127
+[v UserAppRun@u32Counter_65 u32Counter `ul  1 a 4 4 ]
+"118
+[v UserAppRun@u32Counter u32Counter `ul  1 a 4 0 ]
+"133
 } 0
 "76
 [v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
 {
-"80
+"100
 } 0
 "131 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\encm369_pic18.c
 [v _SystemSleep SystemSleep `(v  1 e 1 0 ]

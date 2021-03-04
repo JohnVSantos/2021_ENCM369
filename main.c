@@ -60,6 +60,13 @@ void main(void)
     /* System sleep */
     HEARTBEAT_OFF();
     SystemSleep();
+    
+    //Wait 1ms which is 1000us
+    TimeXus(1000);
+    
+    //Set TMR0IF after 1000us
+    PIR3 |= 0x80;
+    
     HEARTBEAT_ON();
     
   } /* end while(1) main super loop */

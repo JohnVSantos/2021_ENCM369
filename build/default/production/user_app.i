@@ -27326,19 +27326,45 @@ void UserAppInitialize(void)
 void UserAppRun(void)
 {
 
- u32 u32Counter = PORTA;
 
- while(u32Counter <= 0xBF)
- {
-
-  u32Counter++;
-  LATA = u32Counter;
+    u32 u32Counter = PORTA;
 
 
-  for(u32 u32Counter = 800000; u32Counter > 0; u32Counter--)
-  {
+    u32Counter &= 0xC0;
 
-  }
+    while(u32Counter <= 0xBF)
+    {
 
- }
+     u32Counter++;
+
+
+     LATA = u32Counter;
+    }
+
+}
+# 146 "user_app.c"
+void TimeXus(u16 u16Time)
+{
+# 160 "user_app.c"
+     T0CON0 &= 0x7F;
+
+
+
+
+
+     TMR0H = (u16Time >> 8) & 0xFF;
+
+
+
+     TMR0L = u16Time & 0x00FF;
+
+
+
+
+       PIR3 &= 0x7F;
+       T0CON0 |= 0x80;
+
+
+
+
 }

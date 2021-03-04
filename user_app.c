@@ -114,22 +114,22 @@ Promises:
 */
 void UserAppRun(void)
 {
- //Counter Initialization
- u32 u32Counter = PORTA; 
- 
- while(u32Counter <= 0xBF)    
- {
-     
-  u32Counter++;
-  LATA = u32Counter;
-  
-  //Delay
-  for(u32 u32Counter = 800000; u32Counter > 0; u32Counter--)
-  {
-      
-  }
-  
- }
+    
+    //Read LATA to a temporary variable
+    u32 u32Counter = PORTA; 
+
+    //Use a bitmask and bitwise operation to clear the 6 LSBs
+    u32Counter &= 0xC0;
+    
+    while(u32Counter <= 0xBF)    
+    {
+     //Use bitwise operation to update the 6 LSBs to the value you want
+     u32Counter++;
+
+     //Write the temporary variable back to LATA
+     LATA = u32Counter;
+    }
+    
 } /* end UserAppRun */
 
 /*--------------------------------------------------------------------
@@ -143,7 +143,7 @@ Promises:
 - TMR0IF cleared
 - Timer0 enabled
 */
-void TimeXus(INPUT_PARAMETER_)
+void TimeXus(u16 u16Time)
 {
  /* OPTIONAL: range check and handle edge cases */
  /* Disable the timer during config */
@@ -153,12 +153,31 @@ void TimeXus(INPUT_PARAMETER_)
  /* Clear TMR0IF and enable Timer 0 */
 
   /* Steps */
+    
   //1) Stop the timer: Disable EN bit in T0CON0 by setting to 0
-  T0CON0 = 0x10;  
+   /*We only want to change the EN 7th bit (set to 0), 
+     ignore other bits (set to 1). */
+     T0CON0 &= 0x7F;  
   
   //2) Preset TMROH and TMROL registers to the correct value
-  TMROH = 0x00;
-  TMROL = 0x00;
+    /* Initialize TMROH by shifting u16Time by 8 bits to the right.
+     This makes the high byte turn into LSB and the compiler accepts LSB and 
+     stops there.*/
+     TMR0H = (u16Time >> 8) & 0xFF;
+     
+    /*Initialize TMROL by clearing the MSB and the compiler will read the LSB and
+     stops there */
+     TMR0L = u16Time & 0x00FF;
+     
+  //3) Clear the TMR0IF bit (flag) that lives in the PIR3 register. Set Timer0
+     /*Page 162: 7th bit is TMR0IF
+       Clear means AND*/
+       PIR3 &= 0x7F;
+       T0CON0 |= 0x80;
+    
+  //4) Start the timer
+       //DEBUG AND WATCH
+      
 } /* end TimeXus () */
 
 

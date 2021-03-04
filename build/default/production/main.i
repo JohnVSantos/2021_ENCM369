@@ -27333,9 +27333,16 @@ void main(void)
 
 
 
-                   ;
+    (LATA &= 0x7F);
     SystemSleep();
-                  ;
+
+
+    TimeXus(1000);
+
+
+    PIR3 |= 0x80;
+
+    (LATA |= 0x80);
 
   }
 

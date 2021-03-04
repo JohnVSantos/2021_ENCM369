@@ -133,7 +133,7 @@ void UserAppRun(void)
 } /* end UserAppRun */
 
 /*--------------------------------------------------------------------
-void TimeXus(INPUT_PARAMETER_)
+void TimeXus(u16 u16Time)
 Sets Timer0 to count u16Microseconds_
 Requires:
 - Timer0 configured such that each timer tick is 1 microsecond

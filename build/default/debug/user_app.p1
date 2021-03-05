@@ -8,9 +8,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "22725
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 22725: extern volatile unsigned char T0CON1 __attribute__((address(0x31B)));
 [v _T0CON1 `Vuc ~T0 @X0 0 e@795 ]
-"46095
-[; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 46095: extern volatile unsigned char PORTA __attribute__((address(0x4CE)));
-[v _PORTA `Vuc ~T0 @X0 0 e@1230 ]
 "22373
 [; ;C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h: 22373: extern volatile unsigned char TMR0H __attribute__((address(0x319)));
 [v _TMR0H `Vuc ~T0 @X0 0 e@793 ]
@@ -2573,52 +2570,109 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _UserAppRun ]
 [f ]
-"119
-[; ;user_app.c: 119:      u32 u32Counter = PORTA;
+"132
+[; ;user_app.c: 132:      static int i = 0;
+[v F15922 `i ~T0 @X0 1 s i ]
+[i F15922
+-> 0 `i
+]
+[v F15923 `uc ~T0 @X0 -> 5 `i s ]
+[i F15923
+:U ..
+"133
+[; ;user_app.c: 133:      u8 au8Pattern[] = {0x0C, 0x12, 0x21, 0x12, 0x0C};
+-> -> 12 `i `uc
+-> -> 18 `i `uc
+-> -> 33 `i `uc
+-> -> 18 `i `uc
+-> -> 12 `i `uc
+..
+]
+[v _au8Pattern `uc ~T0 @X0 -> 5 `i a ]
+[e = _au8Pattern F15923 ]
+"135
+[; ;user_app.c: 135:      LATA = au8Pattern[i];
+[e = _LATA *U + &U _au8Pattern * -> -> F15922 `ui `ux -> -> # *U &U _au8Pattern `ui `ux ]
+"137
+[; ;user_app.c: 137:      if(i == 4)
+[e $ ! == F15922 -> 4 `i 2274  ]
+"138
+[; ;user_app.c: 138:      {
+{
+"139
+[; ;user_app.c: 139:          i = 0;
+[e = F15922 -> 0 `i ]
+"140
+[; ;user_app.c: 140:      }
+}
+[e $U 2275  ]
+"141
+[; ;user_app.c: 141:      else
+[e :U 2274 ]
+"142
+[; ;user_app.c: 142:      {
+{
+"143
+[; ;user_app.c: 143:          i++;
+[e ++ F15922 -> 1 `i ]
+"144
+[; ;user_app.c: 144:      }
+}
+[e :U 2275 ]
+"146
+[; ;user_app.c: 146:      for(u32 u32Counter = 4000; u32Counter > 0; u32Counter--)
+{
 [v _u32Counter `ul ~T0 @X0 1 a ]
-[e = _u32Counter -> _PORTA `ul ]
-"122
-[; ;user_app.c: 122:      u32Counter &= 0x3F;
-[e =& _u32Counter -> -> -> 63 `i `l `ul ]
-"125
-[; ;user_app.c: 125:      u32Counter++;
-[e ++ _u32Counter -> -> -> 1 `i `l `ul ]
-"128
-[; ;user_app.c: 128:      LATA = u32Counter;
-[e = _LATA -> _u32Counter `uc ]
-"130
-[; ;user_app.c: 130: }
+[e = _u32Counter -> -> -> 4000 `i `l `ul ]
+[e $ > _u32Counter -> -> -> 0 `i `l `ul 2276  ]
+[e $U 2277  ]
+[e :U 2276 ]
+"147
+[; ;user_app.c: 147:      {
+{
+"149
+[; ;user_app.c: 149:      }
+}
+[e -- _u32Counter -> -> -> 1 `i `l `ul ]
+[e $ > _u32Counter -> -> -> 0 `i `l `ul 2276  ]
+[e :U 2277 ]
+}
+"151
+[; ;user_app.c: 151: }
 [e :UE 2273 ]
 }
-"143
-[; ;user_app.c: 143: void TimeXus(u16 u16Time)
+"164
+[; ;user_app.c: 164: void TimeXus(u16 u16Time)
 [v _TimeXus `(v ~T0 @X0 1 ef1`us ]
-"144
-[; ;user_app.c: 144: {
+"165
+[; ;user_app.c: 165: {
 {
 [e :U _TimeXus ]
-"143
-[; ;user_app.c: 143: void TimeXus(u16 u16Time)
+"164
+[; ;user_app.c: 164: void TimeXus(u16 u16Time)
 [v _u16Time `us ~T0 @X0 1 r1 ]
-"144
-[; ;user_app.c: 144: {
+"165
+[; ;user_app.c: 165: {
 [f ]
-"157
-[; ;user_app.c: 157:      T0CON0 &= 0x7F;
+"174
+[; ;user_app.c: 174:     u16Time -= 0xFFFF;
+[e =- _u16Time -> -> 65535 `ui `us ]
+"178
+[; ;user_app.c: 178:      T0CON0 &= 0x7F;
 [e =& _T0CON0 -> -> 127 `i `Vuc ]
-"163
-[; ;user_app.c: 163:      TMR0H = (u16Time >> 8) & 0xFF;
+"184
+[; ;user_app.c: 184:      TMR0H = (u16Time >> 8) & 0xFF;
 [e = _TMR0H -> & >> -> _u16Time `ui -> 8 `i -> -> 255 `i `ui `uc ]
-"167
-[; ;user_app.c: 167:      TMR0L = u16Time & 0x00FF;
+"188
+[; ;user_app.c: 188:      TMR0L = u16Time & 0x00FF;
 [e = _TMR0L -> & -> _u16Time `ui -> -> 255 `i `ui `uc ]
-"172
-[; ;user_app.c: 172:        PIR3 &= 0x7F;
+"193
+[; ;user_app.c: 193:        PIR3 &= 0x7F;
 [e =& _PIR3 -> -> 127 `i `Vuc ]
-"173
-[; ;user_app.c: 173:        T0CON0 |= 0x80;
+"194
+[; ;user_app.c: 194:        T0CON0 |= 0x80;
 [e =| _T0CON0 -> -> 128 `i `Vuc ]
-"179
-[; ;user_app.c: 179: }
-[e :UE 2274 ]
+"200
+[; ;user_app.c: 200: }
+[e :UE 2279 ]
 }

@@ -114,19 +114,40 @@ Promises:
 */
 void UserAppRun(void)
 {
+//PART 1 
+//     //Read LATA to a temporary variable
+//     u32 u32Counter = PORTA; 
+//     
+//     //Use a bitmask and bitwise operation to clear the 6 LSBs
+//     u32Counter &= 0xCF;
+//
+//     //Use bitwise operation to update the 6 LSBs to the value you want
+//     u32Counter++;
+//
+//     //Write the temporary variable back to LATA
+//     LATA = u32Counter;   
+     
+//PART 2
     
-     //Read LATA to a temporary variable
-     u32 u32Counter = PORTA; 
-
-     //Use a bitmask and bitwise operation to clear the 6 LSBs
-     u32Counter &= 0x3F;
-    
-     //Use bitwise operation to update the 6 LSBs to the value you want
-     u32Counter++;
-
-     //Write the temporary variable back to LATA
-     LATA = u32Counter;   
-       
+     static int i = 0;
+     u8 au8Pattern[] = {0x0C, 0x12, 0x21, 0x12, 0x0C};
+     
+     LATA = au8Pattern[i];
+     
+     if(i == 4)
+     {
+         i = 0;
+     }
+     else 
+     {
+         i++;
+     }
+     
+     for(u32 u32Counter = 4000; u32Counter > 0; u32Counter--)
+     {
+         
+     }
+     
 } /* end UserAppRun */
 
 /*--------------------------------------------------------------------
@@ -150,7 +171,7 @@ void TimeXus(u16 u16Time)
  /* Clear TMR0IF and enable Timer 0 */
 
   /* Steps */
-    
+    u16Time -= 0xFFFF;
   //1) Stop the timer: Disable EN bit in T0CON0 by setting to 0
    /*We only want to change the EN 7th bit (set to 0), 
      ignore other bits (set to 1). */

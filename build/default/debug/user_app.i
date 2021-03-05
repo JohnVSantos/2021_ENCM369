@@ -27326,24 +27326,35 @@ void UserAppInitialize(void)
 # 115 "user_app.c"
 void UserAppRun(void)
 {
+# 132 "user_app.c"
+     static int i = 0;
+     u8 au8Pattern[] = {0x0C, 0x12, 0x21, 0x12, 0x0C};
 
+     LATA = au8Pattern[i];
 
-     u32 u32Counter = PORTA;
+     if(i == 4)
+     {
+         i = 0;
+     }
+     else
+     {
+         i++;
+     }
 
+     for(u32 u32Counter = 4000; u32Counter > 0; u32Counter--)
+     {
 
-     u32Counter &= 0x3F;
-
-
-     u32Counter++;
-
-
-     LATA = u32Counter;
+     }
 
 }
-# 143 "user_app.c"
+# 164 "user_app.c"
 void TimeXus(u16 u16Time)
 {
-# 157 "user_app.c"
+# 174 "user_app.c"
+    u16Time -= 0xFFFF;
+
+
+
      T0CON0 &= 0x7F;
 
 

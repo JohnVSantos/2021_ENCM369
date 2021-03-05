@@ -115,25 +115,17 @@ Promises:
 void UserAppRun(void)
 {
     
-    //Read LATA to a temporary variable
-    u32 u32Counter = PORTA; 
+     //Read LATA to a temporary variable
+     u32 u32Counter = PORTA; 
 
-    //Use a bitmask and bitwise operation to clear the 6 LSBs
-    u32Counter &= 0x3F;
+     //Use a bitmask and bitwise operation to clear the 6 LSBs
+     u32Counter &= 0x3F;
     
-    while(u32Counter <= 0xBF)    
-    {
      //Use bitwise operation to update the 6 LSBs to the value you want
      u32Counter++;
 
      //Write the temporary variable back to LATA
-     LATA = u32Counter;
-     
-     for(u32 u32Counter = 0; u32Counter < 4000; u32Counter++) 
-        {
-
-        }
-    }
+     LATA = u32Counter;   
        
 } /* end UserAppRun */
 

@@ -2574,84 +2574,51 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _UserAppRun ]
 [f ]
 "119
-[; ;user_app.c: 119:     u32 u32Counter = PORTA;
+[; ;user_app.c: 119:      u32 u32Counter = PORTA;
 [v _u32Counter `ul ~T0 @X0 1 a ]
 [e = _u32Counter -> _PORTA `ul ]
 "122
-[; ;user_app.c: 122:     u32Counter &= 0x3F;
+[; ;user_app.c: 122:      u32Counter &= 0x3F;
 [e =& _u32Counter -> -> -> 63 `i `l `ul ]
-"124
-[; ;user_app.c: 124:     while(u32Counter <= 0xBF)
-[e $U 2274  ]
-[e :U 2275 ]
 "125
-[; ;user_app.c: 125:     {
-{
-"127
-[; ;user_app.c: 127:      u32Counter++;
+[; ;user_app.c: 125:      u32Counter++;
 [e ++ _u32Counter -> -> -> 1 `i `l `ul ]
-"130
-[; ;user_app.c: 130:      LATA = u32Counter;
+"128
+[; ;user_app.c: 128:      LATA = u32Counter;
 [e = _LATA -> _u32Counter `uc ]
-"132
-[; ;user_app.c: 132:      for(u32 u32Counter = 0; u32Counter < 4000; u32Counter++)
-{
-[v _u32Counter `ul ~T0 @X0 1 a ]
-[e = _u32Counter -> -> -> 0 `i `l `ul ]
-[e $ < _u32Counter -> -> -> 4000 `i `l `ul 2277  ]
-[e $U 2278  ]
-[e :U 2277 ]
-"133
-[; ;user_app.c: 133:         {
-{
-"135
-[; ;user_app.c: 135:         }
-}
-[e ++ _u32Counter -> -> -> 1 `i `l `ul ]
-[e $ < _u32Counter -> -> -> 4000 `i `l `ul 2277  ]
-[e :U 2278 ]
-}
-"136
-[; ;user_app.c: 136:     }
-}
-[e :U 2274 ]
-"124
-[; ;user_app.c: 124:     while(u32Counter <= 0xBF)
-[e $ <= _u32Counter -> -> -> 191 `i `l `ul 2275  ]
-[e :U 2276 ]
-"138
-[; ;user_app.c: 138: }
+"130
+[; ;user_app.c: 130: }
 [e :UE 2273 ]
 }
-"151
-[; ;user_app.c: 151: void TimeXus(u16 u16Time)
+"143
+[; ;user_app.c: 143: void TimeXus(u16 u16Time)
 [v _TimeXus `(v ~T0 @X0 1 ef1`us ]
-"152
-[; ;user_app.c: 152: {
+"144
+[; ;user_app.c: 144: {
 {
 [e :U _TimeXus ]
-"151
-[; ;user_app.c: 151: void TimeXus(u16 u16Time)
+"143
+[; ;user_app.c: 143: void TimeXus(u16 u16Time)
 [v _u16Time `us ~T0 @X0 1 r1 ]
-"152
-[; ;user_app.c: 152: {
+"144
+[; ;user_app.c: 144: {
 [f ]
-"165
-[; ;user_app.c: 165:      T0CON0 &= 0x7F;
+"157
+[; ;user_app.c: 157:      T0CON0 &= 0x7F;
 [e =& _T0CON0 -> -> 127 `i `Vuc ]
-"171
-[; ;user_app.c: 171:      TMR0H = (u16Time >> 8) & 0xFF;
+"163
+[; ;user_app.c: 163:      TMR0H = (u16Time >> 8) & 0xFF;
 [e = _TMR0H -> & >> -> _u16Time `ui -> 8 `i -> -> 255 `i `ui `uc ]
-"175
-[; ;user_app.c: 175:      TMR0L = u16Time & 0x00FF;
+"167
+[; ;user_app.c: 167:      TMR0L = u16Time & 0x00FF;
 [e = _TMR0L -> & -> _u16Time `ui -> -> 255 `i `ui `uc ]
-"180
-[; ;user_app.c: 180:        PIR3 &= 0x7F;
+"172
+[; ;user_app.c: 172:        PIR3 &= 0x7F;
 [e =& _PIR3 -> -> 127 `i `Vuc ]
-"181
-[; ;user_app.c: 181:        T0CON0 |= 0x80;
+"173
+[; ;user_app.c: 173:        T0CON0 |= 0x80;
 [e =| _T0CON0 -> -> 128 `i `Vuc ]
-"187
-[; ;user_app.c: 187: }
-[e :UE 2280 ]
+"179
+[; ;user_app.c: 179: }
+[e :UE 2274 ]
 }

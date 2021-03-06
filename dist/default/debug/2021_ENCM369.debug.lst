@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Thu Mar 04 20:21:44 2021
+                                                                                               Thu Mar 04 23:59:57 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	18F27Q43
@@ -467,7 +467,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    422                           
    423 ;; *************** function _TimeXus *****************
    424 ;; Defined at:
-   425 ;;		line 164 in file "user_app.c"
+   425 ;;		line 179 in file "user_app.c"
    426 ;; Parameters:    Size  Location     Type
    427 ;;  u16Time         2    0[COMRAM] unsigned short 
    428 ;; Auto vars:     Size  Location     Type
@@ -510,32 +510,32 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    455  01FED4                     _TimeXus:
    456                           	callstack 127
    457  01FED4                     
-   458                           ;user_app.c: 164: void TimeXus(u16 u16Time);user_app.c: 165: {;user_app.c: 174:     u16T
+   458                           ;user_app.c: 179: void TimeXus(u16 u16Time);user_app.c: 180: {;user_app.c: 189:     u16T
       +                          ime -= 0xFFFF;
    459  01FED4  0EFF               	movlw	255
    460  01FED6  5E10               	subwf	TimeXus@u16Time^(0+1280),f,c
    461  01FED8  0EFF               	movlw	255
    462  01FEDA  5A11               	subwfb	(TimeXus@u16Time+1)^(0+1280),f,c
    463  01FEDC                     
-   464                           ;user_app.c: 178:      T0CON0 &= 0x7F;
+   464                           ;user_app.c: 193:      T0CON0 &= 0x7F;
    465  01FEDC  0103               	movlb	3	; () banked
    466  01FEDE  9F1A               	bcf	26,7,b	;volatile
    467  01FEE0                     
    468                           ; BSR set to: 3
-   469                           ;user_app.c: 184:      TMR0H = (u16Time >> 8) & 0xFF;
+   469                           ;user_app.c: 199:      TMR0H = (u16Time >> 8) & 0xFF;
    470  01FEE0  5011               	movf	(TimeXus@u16Time+1)^(0+1280),w,c
    471  01FEE2  6F19               	movwf	25,b	;volatile
    472  01FEE4                     
    473                           ; BSR set to: 3
-   474                           ;user_app.c: 188:      TMR0L = u16Time & 0x00FF;
+   474                           ;user_app.c: 203:      TMR0L = u16Time & 0x00FF;
    475  01FEE4  0061  F440  F318   	movff	TimeXus@u16Time,792	;volatile
    476  01FEEA                     
    477                           ; BSR set to: 3
-   478                           ;user_app.c: 193:        PIR3 &= 0x7F;
+   478                           ;user_app.c: 208:        PIR3 &= 0x7F;
    479  01FEEA  9EB1               	bcf	177,7,c	;volatile
    480  01FEEC                     
    481                           ; BSR set to: 3
-   482                           ;user_app.c: 194:        T0CON0 |= 0x80;
+   482                           ;user_app.c: 209:        T0CON0 |= 0x80;
    483  01FEEC  8F1A               	bsf	26,7,b	;volatile
    484  01FEEE                     
    485                           ; BSR set to: 3
@@ -1322,7 +1322,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Thu Mar 04 20:21:44 2021
+Symbol Table                                                                                   Thu Mar 04 23:59:57 2021
 
      __size_of_SysTickSetup 0022                          l13 FEAA                          l22 FEAC  
                         l16 FEC2                          l19 FF10                          l52 FF6C  

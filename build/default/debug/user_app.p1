@@ -2637,42 +2637,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ > _u32Counter -> -> -> 0 `i `l `ul 2276  ]
 [e :U 2277 ]
 }
-"151
-[; ;user_app.c: 151: }
+"166
+[; ;user_app.c: 166: }
 [e :UE 2273 ]
 }
-"164
-[; ;user_app.c: 164: void TimeXus(u16 u16Time)
+"179
+[; ;user_app.c: 179: void TimeXus(u16 u16Time)
 [v _TimeXus `(v ~T0 @X0 1 ef1`us ]
-"165
-[; ;user_app.c: 165: {
+"180
+[; ;user_app.c: 180: {
 {
 [e :U _TimeXus ]
-"164
-[; ;user_app.c: 164: void TimeXus(u16 u16Time)
+"179
+[; ;user_app.c: 179: void TimeXus(u16 u16Time)
 [v _u16Time `us ~T0 @X0 1 r1 ]
-"165
-[; ;user_app.c: 165: {
+"180
+[; ;user_app.c: 180: {
 [f ]
-"174
-[; ;user_app.c: 174:     u16Time -= 0xFFFF;
+"189
+[; ;user_app.c: 189:     u16Time -= 0xFFFF;
 [e =- _u16Time -> -> 65535 `ui `us ]
-"178
-[; ;user_app.c: 178:      T0CON0 &= 0x7F;
-[e =& _T0CON0 -> -> 127 `i `Vuc ]
-"184
-[; ;user_app.c: 184:      TMR0H = (u16Time >> 8) & 0xFF;
-[e = _TMR0H -> & >> -> _u16Time `ui -> 8 `i -> -> 255 `i `ui `uc ]
-"188
-[; ;user_app.c: 188:      TMR0L = u16Time & 0x00FF;
-[e = _TMR0L -> & -> _u16Time `ui -> -> 255 `i `ui `uc ]
 "193
-[; ;user_app.c: 193:        PIR3 &= 0x7F;
+[; ;user_app.c: 193:      T0CON0 &= 0x7F;
+[e =& _T0CON0 -> -> 127 `i `Vuc ]
+"199
+[; ;user_app.c: 199:      TMR0H = (u16Time >> 8) & 0xFF;
+[e = _TMR0H -> & >> -> _u16Time `ui -> 8 `i -> -> 255 `i `ui `uc ]
+"203
+[; ;user_app.c: 203:      TMR0L = u16Time & 0x00FF;
+[e = _TMR0L -> & -> _u16Time `ui -> -> 255 `i `ui `uc ]
+"208
+[; ;user_app.c: 208:        PIR3 &= 0x7F;
 [e =& _PIR3 -> -> 127 `i `Vuc ]
-"194
-[; ;user_app.c: 194:        T0CON0 |= 0x80;
+"209
+[; ;user_app.c: 209:        T0CON0 |= 0x80;
 [e =| _T0CON0 -> -> 128 `i `Vuc ]
-"200
-[; ;user_app.c: 200: }
+"215
+[; ;user_app.c: 215: }
 [e :UE 2279 ]
 }

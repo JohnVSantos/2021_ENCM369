@@ -147,6 +147,21 @@ void UserAppRun(void)
      {
          
      }
+    
+//Other Pattern
+//    static int stateofLED = 0;
+//    
+//    static u8 u8Pattern[] = {0x00, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x21, 0x22, 0x24, 0x28, 0x30, 0x31, 0x32, 0x34, 0x38, 0x39, 0x3A, 0x3C, 0x3D, 0x3E, 0x3F};
+//    
+//    LATA = u8Pattern[stateofLED]; 
+//    if (stateofLED == 22)
+//    {
+//     stateofLED = 0;   
+//    }
+//    else
+//    {
+//        stateofLED++;
+//    }
      
 } /* end UserAppRun */
 

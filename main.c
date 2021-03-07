@@ -63,7 +63,7 @@ void main(void)
     
     //Wait 1ms which is 1000us
    
-    TimeXus(1000);
+    TimeXus(4);
     while((PIR3 & 0x80) == 0x00)
     {
         

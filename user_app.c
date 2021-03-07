@@ -117,19 +117,19 @@ void UserAppRun(void)
     u8 u8Output_level = DAC1DATL;
     
     //Clear all bits except RA2
-    LATA &= 0x08;
+    //LATA &= 0x08;
     
     if(u8Output_level == 0xFF)
     {
-        u8Output_level = 0x00;
-        LATA = 0x00;
+        u8Output_level = 0x01;
+        //LATA = 0x00;
     }
     
     else
     {
         DAC1DATL = u8Output_level;
         u8Output_level++;
-        LATA++;
+        //LATA++;
     }
     
 } /* end UserAppRun */

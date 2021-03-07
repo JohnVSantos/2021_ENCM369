@@ -88,9 +88,26 @@ Promises:
 */
 void GpioSetup(void)
 {
-    PORTA = 0x80;
+    /* Setup PORTA for all digital output */
     TRISA = 0x00;
     ANSELA = 0x00;
+    
+    /* Configure DAC1 for Vdd and Vss references, on, and RA2 output */
+    /* Digital-to-Analog Converter Control Register 1 */
+    //0b10100000
+    //EN bit 7 enables DAC if set to 1
+    //Bit 6 is don't care
+    //OE Bits 5:4 enables DAC1OUT on pin RA2 only if set to 10
+    //PSS Bits 3:2 sets Vdd as positive reference if set to 00
+    //Bit 1 is don't care
+    //NSS Bit 0 sets Vss as negative reference if set to 0
+    DAC1CON = 0xA0;
+    
+    //Digital to Analog Converter Data Register 1
+    //The DAC has 2^n voltage level ranges, where n is the number of bits 
+    //in DACR. Each level is determined by the DACxR bits.
+    DAC1DATL = 0x01;
+       
 } /* end GpioSetup() */
 
 

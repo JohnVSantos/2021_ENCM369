@@ -27326,31 +27326,29 @@ void UserAppInitialize(void)
 # 115 "user_app.c"
 void UserAppRun(void)
 {
-# 132 "user_app.c"
-     static int i = 0;
-     u8 au8Pattern[] = {0x0C, 0x12, 0x21, 0x12, 0x0C};
+    u8 u8Output_level = DAC1DATL;
 
-     LATA = au8Pattern[i];
 
-     if(i == 4)
-     {
-         i = 0;
-     }
-     else
-     {
-         i++;
-     }
 
-     for(u32 u32Counter = 4000; u32Counter > 0; u32Counter--)
-     {
 
-     }
-# 166 "user_app.c"
+    if(u8Output_level == 0xFF)
+    {
+        u8Output_level = 0x01;
+
+    }
+
+    else
+    {
+        DAC1DATL = u8Output_level;
+        u8Output_level++;
+
+    }
+
 }
-# 179 "user_app.c"
+# 148 "user_app.c"
 void TimeXus(u16 u16Time)
 {
-# 189 "user_app.c"
+# 158 "user_app.c"
     u16Time -= 0xFFFF;
 
 

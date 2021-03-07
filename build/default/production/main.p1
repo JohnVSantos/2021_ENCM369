@@ -2606,8 +2606,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 62:     SystemSleep();
 [e ( _SystemSleep ..  ]
 "66
-[; ;main.c: 66:     TimeXus(1000);
-[e ( _TimeXus (1 -> -> 1000 `i `us ]
+[; ;main.c: 66:     TimeXus(4);
+[e ( _TimeXus (1 -> -> 4 `i `us ]
 "67
 [; ;main.c: 67:     while((PIR3 & 0x80) == 0x00)
 [e $U 2276  ]

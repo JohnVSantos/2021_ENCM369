@@ -27339,7 +27339,7 @@ void main(void)
 
 
 
-    TimeXus(1000);
+    TimeXus(4);
     while((PIR3 & 0x80) == 0x00)
     {
 

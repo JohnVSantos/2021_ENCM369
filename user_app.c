@@ -114,22 +114,19 @@ Promises:
 */
 void UserAppRun(void)
 {
-    u8 u8Output_level = DAC1DATL;
-    
-    //Clear all bits except RA2
-    //LATA &= 0x08;
-    
-    if(u8Output_level == 0xFF)
+    //Changing DAC1DATL changes the voltage level, thus changes the output register
+    //static u8 u8Output_level = DAC1DATL;
+   
+    if(DAC1DATL == 0xFF)
     {
-        u8Output_level = 0x01;
-        //LATA = 0x00;
+        DAC1DATL = 0x01;
     }
     
     else
     {
-        DAC1DATL = u8Output_level;
-        u8Output_level++;
-        //LATA++;
+        DAC1DATL++;
+        //u8Output_level++;
+    
     }
     
 } /* end UserAppRun */

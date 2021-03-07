@@ -27326,29 +27326,26 @@ void UserAppInitialize(void)
 # 115 "user_app.c"
 void UserAppRun(void)
 {
-    u8 u8Output_level = DAC1DATL;
 
 
 
-
-    if(u8Output_level == 0xFF)
+    if(DAC1DATL == 0xFF)
     {
-        u8Output_level = 0x01;
-
+        DAC1DATL = 0x01;
     }
 
     else
     {
-        DAC1DATL = u8Output_level;
-        u8Output_level++;
+        DAC1DATL++;
+
 
     }
 
 }
-# 148 "user_app.c"
+# 145 "user_app.c"
 void TimeXus(u16 u16Time)
 {
-# 158 "user_app.c"
+# 155 "user_app.c"
     u16Time -= 0xFFFF;
 
 

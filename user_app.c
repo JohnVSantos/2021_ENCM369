@@ -83,8 +83,8 @@ void UserAppInitialize(void)
     
   /* (Timer0 Control Register 0) */
     //0b10010000
-    //EN Bit 7 enables TImer0 if set to 1
-    //Bit 6 is Don't care
+    //EN Bit 7 enables Timer0 if set to 1
+    //Bit 6 is don't care
     //OUT Bit 5 is Timer0 output
     //MD16 Bit 4 enables 16-bit timer if set to 1
     //OUTPS Bits [3:0] enables 1:1 postscaler if set to 0000
@@ -114,55 +114,24 @@ Promises:
 */
 void UserAppRun(void)
 {
-//PART 1 
-//     //Read LATA to a temporary variable
-//     u32 u32Counter = PORTA; 
-//     
-//     //Use a bitmask and bitwise operation to clear the 6 LSBs
-//     u32Counter &= 0xCF;
-//
-//     //Use bitwise operation to update the 6 LSBs to the value you want
-//     u32Counter++;
-//
-//     //Write the temporary variable back to LATA
-//     LATA = u32Counter;   
-     
-//PART 2
+    u8 u8Output_level = DAC1DATL;
     
-     static int i = 0;
-     u8 au8Pattern[] = {0x0C, 0x12, 0x21, 0x12, 0x0C};
-     
-     LATA = au8Pattern[i];
-     
-     if(i == 4)
-     {
-         i = 0;
-     }
-     else 
-     {
-         i++;
-     }
-     
-     for(u32 u32Counter = 4000; u32Counter > 0; u32Counter--)
-     {
-         
-     }
+    //Clear all bits except RA2
+    LATA &= 0x08;
     
-//Other Pattern
-//    static int stateofLED = 0;
-//    
-//    static u8 u8Pattern[] = {0x00, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x21, 0x22, 0x24, 0x28, 0x30, 0x31, 0x32, 0x34, 0x38, 0x39, 0x3A, 0x3C, 0x3D, 0x3E, 0x3F};
-//    
-//    LATA = u8Pattern[stateofLED]; 
-//    if (stateofLED == 22)
-//    {
-//     stateofLED = 0;   
-//    }
-//    else
-//    {
-//        stateofLED++;
-//    }
-     
+    if(u8Output_level == 0xFF)
+    {
+        u8Output_level = 0x00;
+        LATA = 0x00;
+    }
+    
+    else
+    {
+        DAC1DATL = u8Output_level;
+        u8Output_level++;
+        LATA++;
+    }
+    
 } /* end UserAppRun */
 
 /*--------------------------------------------------------------------

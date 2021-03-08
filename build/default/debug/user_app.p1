@@ -2616,25 +2616,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 "146
 [; ;user_app.c: 146: {
 [f ]
-"155
-[; ;user_app.c: 155:     u16Time -= 0xFFFF;
-[e =- _u16Time -> -> 65535 `ui `us ]
 "159
 [; ;user_app.c: 159:      T0CON0 &= 0x7F;
 [e =& _T0CON0 -> -> 127 `i `Vuc ]
-"165
-[; ;user_app.c: 165:      TMR0H = (u16Time >> 8) & 0xFF;
-[e = _TMR0H -> & >> -> _u16Time `ui -> 8 `i -> -> 255 `i `ui `uc ]
-"169
-[; ;user_app.c: 169:      TMR0L = u16Time & 0x00FF;
-[e = _TMR0L -> & -> _u16Time `ui -> -> 255 `i `ui `uc ]
-"174
-[; ;user_app.c: 174:        PIR3 &= 0x7F;
-[e =& _PIR3 -> -> 127 `i `Vuc ]
+"166
+[; ;user_app.c: 166:      TMR0H = (0xFFFF - u16Time) >> 8;
+[e = _TMR0H -> >> - -> 65535 `ui -> _u16Time `ui -> 8 `i `uc ]
+"170
+[; ;user_app.c: 170:      TMR0L = 0xFFFF - u16Time;
+[e = _TMR0L -> - -> 65535 `ui -> _u16Time `ui `uc ]
 "175
-[; ;user_app.c: 175:        T0CON0 |= 0x80;
+[; ;user_app.c: 175:        PIR3 &= 0x7F;
+[e =& _PIR3 -> -> 127 `i `Vuc ]
+"176
+[; ;user_app.c: 176:        T0CON0 |= 0x80;
 [e =| _T0CON0 -> -> 128 `i `Vuc ]
-"181
-[; ;user_app.c: 181: }
+"182
+[; ;user_app.c: 182: }
 [e :UE 2276 ]
 }

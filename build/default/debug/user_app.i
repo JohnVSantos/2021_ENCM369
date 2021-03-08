@@ -27345,22 +27345,19 @@ void UserAppRun(void)
 # 145 "user_app.c"
 void TimeXus(u16 u16Time)
 {
-# 155 "user_app.c"
-    u16Time -= 0xFFFF;
-
-
-
+# 159 "user_app.c"
      T0CON0 &= 0x7F;
 
 
 
 
 
-     TMR0H = (u16Time >> 8) & 0xFF;
+
+     TMR0H = (0xFFFF - u16Time) >> 8;
 
 
 
-     TMR0L = u16Time & 0x00FF;
+     TMR0L = 0xFFFF - u16Time;
 
 
 

@@ -2573,84 +2573,65 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _UserAppRun ]
 [f ]
-"117
-[; ;user_app.c: 117:     u8 u8Output_level = DAC1DATL;
-[v _u8Output_level `uc ~T0 @X0 1 a ]
-[e = _u8Output_level _DAC1DATL ]
 "120
-[; ;user_app.c: 120:     LATA &= 0x08;
-[e =& _LATA -> -> 8 `i `Vuc ]
-"122
-[; ;user_app.c: 122:     if(u8Output_level == 0xFF)
-[e $ ! == -> _u8Output_level `i -> 255 `i 2274  ]
-"123
-[; ;user_app.c: 123:     {
+[; ;user_app.c: 120:     if(DAC1DATL == 0xFF)
+[e $ ! == -> _DAC1DATL `i -> 255 `i 2274  ]
+"121
+[; ;user_app.c: 121:     {
 {
-"124
-[; ;user_app.c: 124:         u8Output_level = 0x00;
-[e = _u8Output_level -> -> 0 `i `uc ]
-"125
-[; ;user_app.c: 125:         LATA = 0x00;
-[e = _LATA -> -> 0 `i `uc ]
-"126
-[; ;user_app.c: 126:     }
+"122
+[; ;user_app.c: 122:         DAC1DATL = 0x00;
+[e = _DAC1DATL -> -> 0 `i `uc ]
+"123
+[; ;user_app.c: 123:     }
 }
 [e $U 2275  ]
-"128
-[; ;user_app.c: 128:     else
+"125
+[; ;user_app.c: 125:     else
 [e :U 2274 ]
-"129
-[; ;user_app.c: 129:     {
+"126
+[; ;user_app.c: 126:     {
 {
+"127
+[; ;user_app.c: 127:         DAC1DATL++;
+[e ++ _DAC1DATL -> -> 1 `i `Vuc ]
 "130
-[; ;user_app.c: 130:         DAC1DATL = u8Output_level;
-[e = _DAC1DATL _u8Output_level ]
-"131
-[; ;user_app.c: 131:         u8Output_level++;
-[e ++ _u8Output_level -> -> 1 `i `uc ]
-"132
-[; ;user_app.c: 132:         LATA++;
-[e ++ _LATA -> -> 1 `i `Vuc ]
-"133
-[; ;user_app.c: 133:     }
+[; ;user_app.c: 130:     }
 }
 [e :U 2275 ]
-"135
-[; ;user_app.c: 135: }
+"132
+[; ;user_app.c: 132: }
 [e :UE 2273 ]
 }
-"148
-[; ;user_app.c: 148: void TimeXus(u16 u16Time)
+"145
+[; ;user_app.c: 145: void TimeXus(u16 u16Time)
 [v _TimeXus `(v ~T0 @X0 1 ef1`us ]
-"149
-[; ;user_app.c: 149: {
+"146
+[; ;user_app.c: 146: {
 {
 [e :U _TimeXus ]
-"148
-[; ;user_app.c: 148: void TimeXus(u16 u16Time)
+"145
+[; ;user_app.c: 145: void TimeXus(u16 u16Time)
 [v _u16Time `us ~T0 @X0 1 r1 ]
-"149
-[; ;user_app.c: 149: {
+"146
+[; ;user_app.c: 146: {
 [f ]
-"158
-[; ;user_app.c: 158:     u16Time -= 0xFFFF;
-[e =- _u16Time -> -> 65535 `ui `us ]
-"162
-[; ;user_app.c: 162:      T0CON0 &= 0x7F;
+"159
+[; ;user_app.c: 159:      T0CON0 &= 0x7F;
 [e =& _T0CON0 -> -> 127 `i `Vuc ]
-"168
-[; ;user_app.c: 168:      TMR0H = (u16Time >> 8) & 0xFF;
-[e = _TMR0H -> & >> -> _u16Time `ui -> 8 `i -> -> 255 `i `ui `uc ]
-"172
-[; ;user_app.c: 172:      TMR0L = u16Time & 0x00FF;
-[e = _TMR0L -> & -> _u16Time `ui -> -> 255 `i `ui `uc ]
-"177
-[; ;user_app.c: 177:        PIR3 &= 0x7F;
+"166
+[; ;user_app.c: 166:      TMR0H = (0xFFFF - u16Time) >> 8;
+[e = _TMR0H -> >> - -> 65535 `ui -> _u16Time `ui -> 8 `i `uc ]
+"170
+[; ;user_app.c: 170:      TMR0L = 0xFFFF - u16Time;
+[e = _TMR0L -> - -> 65535 `ui -> _u16Time `ui `uc ]
+"175
+[; ;user_app.c: 175:        PIR3 &= 0x7F;
 [e =& _PIR3 -> -> 127 `i `Vuc ]
-"178
-[; ;user_app.c: 178:        T0CON0 |= 0x80;
+"176
+[; ;user_app.c: 176:        T0CON0 |= 0x80;
 [e =| _T0CON0 -> -> 128 `i `Vuc ]
-"184
-[; ;user_app.c: 184: }
+"182
+[; ;user_app.c: 182: }
 [e :UE 2276 ]
 }

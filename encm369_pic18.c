@@ -106,7 +106,7 @@ void GpioSetup(void)
     //Digital to Analog Converter Data Register 1
     //The DAC has 2^n voltage level ranges, where n is the number of bits 
     //in DACR. Each level is determined by the DACxR bits.
-    DAC1DATL = 0x01;
+    DAC1DATL = 0x00;
        
 } /* end GpioSetup() */
 

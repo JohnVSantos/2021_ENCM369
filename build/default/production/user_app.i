@@ -27326,44 +27326,38 @@ void UserAppInitialize(void)
 # 115 "user_app.c"
 void UserAppRun(void)
 {
-    u8 u8Output_level = DAC1DATL;
 
 
-    LATA &= 0x08;
 
-    if(u8Output_level == 0xFF)
+    if(DAC1DATL == 0xFF)
     {
-        u8Output_level = 0x00;
-        LATA = 0x00;
+        DAC1DATL = 0x00;
     }
 
     else
     {
-        DAC1DATL = u8Output_level;
-        u8Output_level++;
-        LATA++;
+        DAC1DATL++;
+
+
     }
 
 }
-# 148 "user_app.c"
+# 145 "user_app.c"
 void TimeXus(u16 u16Time)
 {
-# 158 "user_app.c"
-    u16Time -= 0xFFFF;
-
-
-
+# 159 "user_app.c"
      T0CON0 &= 0x7F;
 
 
 
 
 
-     TMR0H = (u16Time >> 8) & 0xFF;
+
+     TMR0H = (0xFFFF - u16Time) >> 8;
 
 
 
-     TMR0L = u16Time & 0x00FF;
+     TMR0L = 0xFFFF - u16Time;
 
 
 

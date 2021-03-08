@@ -266,7 +266,7 @@ text7 1FF24 1FF25 CODE 1FF24 0
 %locals
 dist/default/debug\2021_ENCM369.debug.o
 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
-C:\Users\johns\AppData\Local\Temp\suoc.s
+C:\Users\johns\AppData\Local\Temp\stis.s
 5096 1FF38 0 CODE 0
 5098 1FF38 0 CODE 0
 5101 1FF38 0 CODE 0

@@ -37,11 +37,11 @@
 [v _SystemSleep SystemSleep `(v  1 e 1 0 ]
 "35 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\main.c
 [v _main main `(v  1 e 1 0 ]
-"76 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+"95 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
 [v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
-"115
+"134
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
-"145
+"206
 [v _TimeXus TimeXus `(v  1 e 1 0 ]
 "3158 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
 [v _DAC1DATL DAC1DATL `VEuc  1 e 1 @125 ]
@@ -69,28 +69,34 @@
 [v _G_u32SystemTime1s G_u32SystemTime1s `VEul  1 e 4 0 ]
 "16
 [v _G_u32SystemFlags G_u32SystemFlags `VEul  1 e 4 0 ]
-"33 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+"32 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+[v _UserApp_au8sinTable UserApp_au8sinTable `[256]uc  1 s 256 UserApp_au8sinTable ]
+"52
 [v _G_u8UserAppFlags G_u8UserAppFlags `VEuc  1 e 1 0 ]
 "35 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"78
+"90
 } 0
-"115 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+"134 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
 {
-"132
+"163
+[v UserAppRun@index index `i  1 s 2 index ]
+"166
+[v UserAppRun@last_value last_value `a  1 s 1 last_value ]
+"193
 } 0
-"76
+"95
 [v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
 {
-"100
+"119
 } 0
-"145
+"206
 [v _TimeXus TimeXus `(v  1 e 1 0 ]
 {
 [v TimeXus@u16Time u16Time `us  1 p 2 0 ]
-"182
+"245
 } 0
 "148 C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\encm369_pic18.c
 [v _SystemSleep SystemSleep `(v  1 e 1 0 ]

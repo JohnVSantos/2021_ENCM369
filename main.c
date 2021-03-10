@@ -54,16 +54,27 @@ void main(void)
     /* Drivers */
        
     /* Applications */
-    UserAppRun();
-   
-     
+      
+   /*Call UserAppRun for triangle waveform */
+   UserAppRun();
+
+   /* This produces a sawtooth waveform */
+#if 0 /*Trying to run as fast as possible */
+    /*Set the Timer and wait out the period */
+    TimeXus(2);
+    while(PIR3bits.TMR0IF == 0);
+    //Use 64 steps instead of 256
+    DAC1DATL += 4;
+#endif
+    
+#if 1
     /* System sleep */
     HEARTBEAT_OFF();
     SystemSleep();
     
     //Wait 1ms which is 1000us
    
-    TimeXus(4);
+    TimeXus(6);
     while((PIR3 & 0x80) == 0x00)
     {
         
@@ -72,6 +83,7 @@ void main(void)
     //PIR3 |= 0x80;
     
     HEARTBEAT_ON();
+#endif
     
   } /* end while(1) main super loop */
   

@@ -2596,43 +2596,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 "53
 [; ;main.c: 53:   {
 {
-"57
-[; ;main.c: 57:     UserAppRun();
+"59
+[; ;main.c: 59:    UserAppRun();
 [e ( _UserAppRun ..  ]
-"61
-[; ;main.c: 61:     (LATA &= 0x7F);
+"72
+[; ;main.c: 72:     (LATA &= 0x7F);
 [e =& _LATA -> -> 127 `i `Vuc ]
-"62
-[; ;main.c: 62:     SystemSleep();
+"73
+[; ;main.c: 73:     SystemSleep();
 [e ( _SystemSleep ..  ]
-"66
-[; ;main.c: 66:     TimeXus(4);
-[e ( _TimeXus (1 -> -> 4 `i `us ]
-"67
-[; ;main.c: 67:     while((PIR3 & 0x80) == 0x00)
+"77
+[; ;main.c: 77:     TimeXus(6);
+[e ( _TimeXus (1 -> -> 6 `i `us ]
+"78
+[; ;main.c: 78:     while((PIR3 & 0x80) == 0x00)
 [e $U 2276  ]
 [e :U 2277 ]
-"68
-[; ;main.c: 68:     {
+"79
+[; ;main.c: 79:     {
 {
-"70
-[; ;main.c: 70:     }
+"81
+[; ;main.c: 81:     }
 }
 [e :U 2276 ]
-"67
-[; ;main.c: 67:     while((PIR3 & 0x80) == 0x00)
+"78
+[; ;main.c: 78:     while((PIR3 & 0x80) == 0x00)
 [e $ == & -> _PIR3 `i -> 128 `i -> 0 `i 2277  ]
 [e :U 2278 ]
-"74
-[; ;main.c: 74:     (LATA |= 0x80);
+"85
+[; ;main.c: 85:     (LATA |= 0x80);
 [e =| _LATA -> -> 128 `i `Vuc ]
-"76
-[; ;main.c: 76:   }
+"88
+[; ;main.c: 88:   }
 }
 [e :U 2273 ]
 [e $U 2274  ]
 [e :U 2275 ]
-"78
-[; ;main.c: 78: }
+"90
+[; ;main.c: 90: }
 [e :UE 2272 ]
 }

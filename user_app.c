@@ -55,12 +55,6 @@ u8 G_au8UserAppsinTable[] =
 0x4f,0x52,0x55,0x58,0x5a,0x5d,0x61,0x64,0x67,0x6a,0x6d,0x70,0x73,0x76,0x79,0x7c   
 };
 
-u16 G_au16TwinkleStar[] =
-{
-C4, C4, G4, G4, A4, A4, G4, F4, F4, E4, E4, D4, D4, C4    
-
-};
-
 /*--------------------------------------------------------------------------------------------------------------------*/
 /* Existing variables (defined in other files -- should all contain the "extern" keyword) */
 extern volatile u32 G_u32SystemTime1ms;                   /*!< @brief From main.c */
@@ -224,7 +218,8 @@ void UserAppInitialize(void)
     T1CON  = 0x31;  // b'00110001'
     
     // Test call to set frequency
-    InterruptTimerXus(16, true);
+    // InterruptTimerXus(16, true);
+
     
 } /* end UserAppInitialize() */
 
@@ -243,8 +238,43 @@ Promises:
 */
 void UserAppRun(void)
 {
+    
+    static u16 G_au16TwinkleStar[] =
+    {
+    C4, C4, G4, G4, A4, A4, G4, F4, F4, E4, E4, D4, D4, C4    
+    };
 
-  
+    static u16 G_au16NoteDuration[] = 
+    {
+    N4, N4, N4, N4, N4, N4, N2, N4, N4, N4, N4, N4, N4, N2    
+    };
+    
+    static u8 u8Indexmusic = 0;
+    static u16 u16Notetime = 0;
+    static u16 u16Notetimecount = 0;
+    
+    u16Notetime = G_au16NoteDuration[u8Indexmusic];
+    
+    if(u16Notetimecount == u16Notetime)
+    {
+        
+        u8Indexmusic++;
+        u16Notetimecount = 0;
+        
+    }
+    else
+    {
+        u16Notetimecount++;
+    }
+    
+    InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], true);
+    
+    
+    if (u8Indexmusic == 13)
+    {
+        u8Indexmusic = 0;
+    }
+    
 } /* end UserAppRun() */
 
 

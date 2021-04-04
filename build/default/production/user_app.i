@@ -27341,22 +27341,16 @@ u8 G_au8UserAppsinTable[] =
 0x4f,0x52,0x55,0x58,0x5a,0x5d,0x61,0x64,0x67,0x6a,0x6d,0x70,0x73,0x76,0x79,0x7c
 };
 
-u16 G_au16TwinkleStar[] =
-{
-(u16)(u16)60, (u16)(u16)60, (u16)(u16)40, (u16)(u16)40, (u16)(u16)36, (u16)(u16)36, (u16)(u16)40, (u16)(u16)45, (u16)(u16)45, (u16)(u16)47, (u16)(u16)47, (u16)(u16)53, (u16)(u16)53, (u16)(u16)60
-
-};
-
 
 
 extern volatile u32 G_u32SystemTime1ms;
 extern volatile u32 G_u32SystemTime1s;
 extern volatile u32 G_u32SystemFlags;
-# 100 "user_app.c"
+# 94 "user_app.c"
 void TimeXus(u16 u16TimeXus_)
 {
   u16 u16Temp = 65535;
-# 114 "user_app.c"
+# 108 "user_app.c"
   T0CON0bits.EN = 0;
 
 
@@ -27369,7 +27363,7 @@ void TimeXus(u16 u16TimeXus_)
   T0CON0bits.EN = 1;
 
 }
-# 153 "user_app.c"
+# 147 "user_app.c"
 void InterruptTimerXus(u16 u16TimeXus_, _Bool bContinuous_)
 {
   u16 u16Temp;
@@ -27406,7 +27400,7 @@ void InterruptTimerXus(u16 u16TimeXus_, _Bool bContinuous_)
   T1CONbits.ON = 1;
 
 }
-# 210 "user_app.c"
+# 204 "user_app.c"
 void UserAppInitialize(void)
 {
 
@@ -27424,12 +27418,48 @@ void UserAppInitialize(void)
     T1CON = 0x31;
 
 
-    InterruptTimerXus(16, 1);
+
+
 
 }
-# 244 "user_app.c"
+# 239 "user_app.c"
 void UserAppRun(void)
 {
 
+    static u16 G_au16TwinkleStar[] =
+    {
+    (u16)(u16)60, (u16)(u16)60, (u16)(u16)40, (u16)(u16)40, (u16)(u16)36, (u16)(u16)36, (u16)(u16)40, (u16)(u16)45, (u16)(u16)45, (u16)(u16)47, (u16)(u16)47, (u16)(u16)53, (u16)(u16)53, (u16)(u16)60
+    };
+
+    static u16 G_au16NoteDuration[] =
+    {
+    (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 2), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 2)
+    };
+
+    static u8 u8Indexmusic = 0;
+    static u16 u16Notetime = 0;
+    static u16 u16Notetimecount = 0;
+
+    u16Notetime = G_au16NoteDuration[u8Indexmusic];
+
+    if(u16Notetimecount == u16Notetime)
+    {
+
+        u8Indexmusic++;
+        u16Notetimecount = 0;
+
+    }
+    else
+    {
+        u16Notetimecount++;
+    }
+
+    InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], 1);
+
+
+    if (u8Indexmusic == 13)
+    {
+        u8Indexmusic = 0;
+    }
 
 }

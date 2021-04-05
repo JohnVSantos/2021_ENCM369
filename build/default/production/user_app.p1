@@ -3118,106 +3118,96 @@ Version 4.0 HI-TECH Software Intermediate Code
 "258
 [; ;user_app.c: 258:     u16Notetime = G_au16NoteDuration[u8Indexmusic];
 [e = F15936 *U + &U F15934 * -> F15935 `ux -> -> # *U &U F15934 `ui `ux ]
-"260
-[; ;user_app.c: 260:     if(u8Indexmusic < 14)
-[e $ ! < -> F15935 `i -> 14 `i 2278  ]
-"261
-[; ;user_app.c: 261:     {
-{
 "263
 [; ;user_app.c: 263:         if(u16Notetimecount == u16Notetime)
-[e $ ! == -> F15937 `ui -> F15936 `ui 2279  ]
+[e $ ! == -> F15937 `ui -> F15936 `ui 2278  ]
 "264
 [; ;user_app.c: 264:         {
 {
 "265
 [; ;user_app.c: 265:             if(u16TimebetweenNotes == (u16)50)
-[e $ ! == -> F15938 `ui -> -> -> 50 `i `us `ui 2280  ]
+[e $ ! == -> F15938 `ui -> -> -> 50 `i `us `ui 2279  ]
 "266
 [; ;user_app.c: 266:             {
 {
 "267
 [; ;user_app.c: 267:                  u8Indexmusic++;
 [e ++ F15935 -> -> 1 `i `uc ]
-"268
-[; ;user_app.c: 268:                  u16Notetimecount = 0;
-[e = F15937 -> -> 0 `i `us ]
 "269
-[; ;user_app.c: 269:                  u16TimebetweenNotes = 0;
-[e = F15938 -> -> 0 `i `us ]
+[; ;user_app.c: 269:                  if(u8Indexmusic >= 14)
+[e $ ! >= -> F15935 `i -> 14 `i 2280  ]
 "270
-[; ;user_app.c: 270:                  SameNote = 1;
-[e = F15939 -> -> 1 `i `a ]
-"271
-[; ;user_app.c: 271:             }
-}
-[e $U 2281  ]
-"272
-[; ;user_app.c: 272:             else
-[e :U 2280 ]
-"273
-[; ;user_app.c: 273:             {
+[; ;user_app.c: 270:                  {
 {
+"271
+[; ;user_app.c: 271:                    u8Indexmusic = 0;
+[e = F15935 -> -> 0 `i `uc ]
+"272
+[; ;user_app.c: 272:                  }
+}
+[e :U 2280 ]
 "274
-[; ;user_app.c: 274:                 InterruptTimerXus((u16)(u16)0, 1);
-[e ( _InterruptTimerXus (2 , -> -> 0 `i `us -> -> 1 `i `a ]
+[; ;user_app.c: 274:                  u16Notetimecount = 0;
+[e = F15937 -> -> 0 `i `us ]
 "275
-[; ;user_app.c: 275:                 u16TimebetweenNotes++;
-[e ++ F15938 -> -> 1 `i `us ]
+[; ;user_app.c: 275:                  u16TimebetweenNotes = 0;
+[e = F15938 -> -> 0 `i `us ]
 "276
-[; ;user_app.c: 276:                 SameNote = 0;
-[e = F15939 -> -> 0 `i `a ]
+[; ;user_app.c: 276:                  SameNote = 1;
+[e = F15939 -> -> 1 `i `a ]
 "277
 [; ;user_app.c: 277:             }
 }
-[e :U 2281 ]
+[e $U 2281  ]
+"278
+[; ;user_app.c: 278:             else
+[e :U 2279 ]
 "279
-[; ;user_app.c: 279:         }
+[; ;user_app.c: 279:             {
+{
+"280
+[; ;user_app.c: 280:                 InterruptTimerXus((u16)(u16)0, 1);
+[e ( _InterruptTimerXus (2 , -> -> 0 `i `us -> -> 1 `i `a ]
+"281
+[; ;user_app.c: 281:                 u16TimebetweenNotes++;
+[e ++ F15938 -> -> 1 `i `us ]
+"282
+[; ;user_app.c: 282:                 SameNote = 0;
+[e = F15939 -> -> 0 `i `a ]
+"283
+[; ;user_app.c: 283:             }
+}
+[e :U 2281 ]
+"285
+[; ;user_app.c: 285:         }
 }
 [e $U 2282  ]
-"281
-[; ;user_app.c: 281:         else
-[e :U 2279 ]
-"282
-[; ;user_app.c: 282:         {
+"287
+[; ;user_app.c: 287:         else
+[e :U 2278 ]
+"288
+[; ;user_app.c: 288:         {
 {
-"283
-[; ;user_app.c: 283:             u16Notetimecount++;
+"289
+[; ;user_app.c: 289:             u16Notetimecount++;
 [e ++ F15937 -> -> 1 `i `us ]
-"284
-[; ;user_app.c: 284:         }
+"290
+[; ;user_app.c: 290:         }
 }
 [e :U 2282 ]
-"286
-[; ;user_app.c: 286:         if(SameNote)
-[e $ ! != -> F15939 `i -> 0 `i 2283  ]
-"287
-[; ;user_app.c: 287:         {
-{
-"288
-[; ;user_app.c: 288:             InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], 1);
-[e ( _InterruptTimerXus (2 , *U + &U F15933 * -> F15935 `ux -> -> # *U &U F15933 `ui `ux -> -> 1 `i `a ]
-"289
-[; ;user_app.c: 289:         }
-}
-[e :U 2283 ]
-"290
-[; ;user_app.c: 290:     }
-}
-[e $U 2284  ]
 "292
-[; ;user_app.c: 292:     else
-[e :U 2278 ]
+[; ;user_app.c: 292:         if(SameNote)
+[e $ ! != -> F15939 `i -> 0 `i 2283  ]
 "293
-[; ;user_app.c: 293:     {
+[; ;user_app.c: 293:         {
 {
 "294
-[; ;user_app.c: 294:         u8Indexmusic = 0;
-[e = F15935 -> -> 0 `i `uc ]
+[; ;user_app.c: 294:             InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], 1);
+[e ( _InterruptTimerXus (2 , *U + &U F15933 * -> F15935 `ux -> -> # *U &U F15933 `ui `ux -> -> 1 `i `a ]
 "295
-[; ;user_app.c: 295:     }
+[; ;user_app.c: 295:         }
 }
-[e :U 2284 ]
+[e :U 2283 ]
 "297
 [; ;user_app.c: 297: }
 [e :UE 2277 ]

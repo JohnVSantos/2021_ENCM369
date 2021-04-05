@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2_31\pic\dat\en_msgs.txt \
   -pivt0x8=08h -cn -h+dist/default/production\2021_ENCM369.production.sym \
   --cmf=dist/default/production\2021_ENCM369.production.cmf -z -Q18F27Q43 \
-  -oC:\Users\johns\AppData\Local\Temp\sa14.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\johns\AppData\Local\Temp\s864.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/2021_ENCM369.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=0700h-025FFh -pstack=STACK \
   -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh -ASMALLCONST=02600h-026FFhx474 \
@@ -31,7 +31,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\johns\AppData\Local\Temp\sa14.o \
+  C:\Users\johns\AppData\Local\Temp\s864.o \
   dist/default/production\2021_ENCM369.production.o 
 
 Object code version is 3.11
@@ -41,7 +41,7 @@ Machine type is 18F27Q43
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\johns\AppData\Local\Temp\sa14.o
+C:\Users\johns\AppData\Local\Temp\s864.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 init                                102      102        4        4       0
@@ -50,27 +50,27 @@ dist/default/production\2021_ENCM369.production.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 ivt0x8                                8        8       FA        4       0
-                text12                              4C4      4C4       12      131       0
-                text11                              390      390       3A       E4       0
-                text10                              4E0      4E0        4      138       0
-                text9                               480      480       1A      202       0
-                text8                               4E4      4E4        2      138       0
-                text7                               49A      49A       16      202       0
-                text6                               4D6      4D6        8      131       0
-                text5                               404      404       34      202       0
-                text4                               4B0      4B0       12      202       0
-                text3                               464      464       1C      202       0
-                text2                               33A      33A       54        4       0
-                text1                               206      206       D0        4       0
-                text0                               438      438       2C      202       0
+                text12                              4C0      4C0       12      130       0
+                text11                              38C      38C       3A       E3       0
+                text10                              4DC      4DC        4      137       0
+                text9                               47C      47C       1A      200       0
+                text8                               4E0      4E0        2      137       0
+                text7                               496      496       16      200       0
+                text6                               4D2      4D2        8      130       0
+                text5                               400      400       34      200       0
+                text4                               4AC      4AC       12      200       0
+                text3                               460      460       1C      200       0
+                text2                               336      336       54        4       0
+                text1                               206      206       CC        4       0
+                text0                               434      434       2C      200       0
                 cstackCOMRAM                        550      550        6      501       1
                 dataBANK6                           600      600      100      600       1
                 dataCOMRAM                          501      501       39      501       1
                 bssCOMRAM                           53A      53A       16      501       1
-                cinit                               2D6      2D6       64        4       0
+                cinit                               2D2      2D2       64        4       0
                 nvCOMRAM                            556      556        2      501       1
                 idataBANK6                          106      106      100        4       0
-                idataCOMRAM                         3CA      3CA       39       E4       0
+                idataCOMRAM                         3C6      3C6       39       E3       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -79,22 +79,22 @@ TOTAL           Name                               Link     Load   Length     Sp
                 init                                102      102        4         0
                 reset_vec                             0        0        4         0
                 ivt0x8                                8        8       FA         0
-                text12                              4C4      4C4       12         0
-                text11                              390      390       3A         0
-                text10                              4E0      4E0        4         0
-                text9                               480      480       1A         0
-                text8                               4E4      4E4        2         0
-                text7                               49A      49A       16         0
-                text6                               4D6      4D6        8         0
-                text5                               404      404       34         0
-                text4                               4B0      4B0       12         0
-                text3                               464      464       1C         0
-                text2                               33A      33A       54         0
-                text1                               206      206       D0         0
-                text0                               438      438       2C         0
-                cinit                               2D6      2D6       64         0
+                text12                              4C0      4C0       12         0
+                text11                              38C      38C       3A         0
+                text10                              4DC      4DC        4         0
+                text9                               47C      47C       1A         0
+                text8                               4E0      4E0        2         0
+                text7                               496      496       16         0
+                text6                               4D2      4D2        8         0
+                text5                               400      400       34         0
+                text4                               4AC      4AC       12         0
+                text3                               460      460       1C         0
+                text2                               336      336       54         0
+                text1                               206      206       CC         0
+                text0                               434      434       2C         0
+                cinit                               2D2      2D2       64         0
                 idataBANK6                          106      106      100         0
-                idataCOMRAM                         3CA      3CA       39         0
+                idataCOMRAM                         3C6      3C6       39         0
 
         CLASS   CONST          
 
@@ -198,11 +198,11 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
-                ivt0x8                         000008  000386  00038E         4       0  CODE    
-                text11                         000390  000073  000403        E4       0  CODE    
-                text5                          000404  0000BE  0004C2       202       0  CODE    
-                text12                         0004C4  00001A  0004DE       131       0  CODE    
-                text10                         0004E0  000006  0004E6       138       0  CODE    
+                ivt0x8                         000008  000382  00038A         4       0  CODE    
+                text11                         00038C  000073  0003FF        E3       0  CODE    
+                text5                          000400  0000BE  0004BE       200       0  CODE    
+                text12                         0004C0  00001A  0004DA       130       0  CODE    
+                text10                         0004DC  000006  0004E2       137       0  CODE    
                 dataCOMRAM                     000501  000057  000558       501       1  COMRAM  
                 dataBANK6                      000600  000100  000700       600       1  BANK6   
 
@@ -245,19 +245,19 @@ UNUSED ADDRESS RANGES
         BIGRAM           000558-0005FF               A8
                          000700-0025FF             1F00
         CODE             000004-000007                4
-                         00038E-00038F                2
-                         000403-000403                1
-                         0004C2-0004C3                2
-                         0004DE-0004DF                2
-                         0004E6-01FFFF            1FB1A
+                         00038A-00038B                2
+                         0003FF-0003FF                1
+                         0004BE-0004BF                2
+                         0004DA-0004DB                2
+                         0004E2-01FFFF            1FB1E
         COMRAM           000558-00055F                8
         CONFIG           30000A-300011                8
         CONST            000004-000007                4
-                         00038E-00038F                2
-                         000403-000403                1
-                         0004C2-0004C3                2
-                         0004DE-0004DF                2
-                         0004E6-01FFFF            1FB1A
+                         00038A-00038B                2
+                         0003FF-0003FF                1
+                         0004BE-0004BF                2
+                         0004DA-0004DB                2
+                         0004E2-01FFFF            1FB1E
         EEDATA           380000-3803FF              400
         MEDIUMCONST      002600-00FFFF             DA00
                          012600-01FFFF             DA00
@@ -285,10 +285,10 @@ UserAppRun@u16Notetimecount     bssCOMRAM    000548
 UserAppRun@u16TimebetweenNotes  bssCOMRAM    000546
 UserAppRun@u8Indexmusic         bssCOMRAM    00054B
 _ANSELA                         (abs)        000400
-_ClockSetup                     text8        0004E4
+_ClockSetup                     text8        0004E0
 _DAC1CON                        (abs)        00007F
 _DAC1DATL                       (abs)        00007D
-_DEFAULT_ISR                    text9        000480
+_DEFAULT_ISR                    text9        00047C
 _G_au8UserAppsinTable           dataBANK6    000600
 _G_u32SystemTime1ms             bssCOMRAM    000542
 _G_u32SystemTime1s              bssCOMRAM    00053E
@@ -296,17 +296,17 @@ _G_u8SystemFlags                bssCOMRAM    00054F
 _G_u8UserAppFlags               bssCOMRAM    00054E
 _G_u8UserAppTimePeriodHi        bssCOMRAM    00054D
 _G_u8UserAppTimePeriodLo        bssCOMRAM    00054C
-_GpioSetup                      text7        00049A
+_GpioSetup                      text7        000496
 _INTCON0bits                    (abs)        0004D6
-_InterruptSetup                 text6        0004D6
-_InterruptTimerXus              text2        00033A
+_InterruptSetup                 text6        0004D2
+_InterruptTimerXus              text2        000336
 _LATA                           (abs)        0004BE
 _PIE3bits                       (abs)        0004A1
 _PIR0bits                       (abs)        0004AE
 _PIR3bits                       (abs)        0004B1
-_SW_ISR                         text10       0004E0
-_SysTickSetup                   text5        000404
-_SystemSleep                    text4        0004B0
+_SW_ISR                         text10       0004DC
+_SysTickSetup                   text5        000400
+_SystemSleep                    text4        0004AC
 _T0CON0                         (abs)        00031A
 _T0CON0bits                     (abs)        00031A
 _T0CON1                         (abs)        00031B
@@ -321,10 +321,10 @@ _TMR0H                          (abs)        000319
 _TMR0L                          (abs)        000318
 _TMR1H                          (abs)        00031D
 _TMR1L                          (abs)        00031C
-_TMR1_ISR                       text11       000390
-_TMR2_ISR                       text12       0004C4
+_TMR1_ISR                       text11       00038C
+_TMR2_ISR                       text12       0004C0
 _TRISA                          (abs)        0004C6
-_UserAppInitialize              text3        000464
+_UserAppInitialize              text3        000460
 _UserAppRun                     text1        000206
 __HRAM                          (abs)        000000
 __Habs1                         abs1         000000
@@ -524,7 +524,7 @@ __Ltext6                        text6        000000
 __Ltext7                        text7        000000
 __Ltext8                        text8        000000
 __Ltext9                        text9        000000
-__S0                            (abs)        0004E6
+__S0                            (abs)        0004E2
 __S1                            (abs)        000700
 __S2                            (abs)        000000
 __S4                            (abs)        000000
@@ -536,44 +536,44 @@ ___rparam_used                  (abs)        000001
 ___sp                           stack        000000
 __accesstop                     (abs)        000560
 __activetblptr                  (abs)        000000
-__end_of_ClockSetup             text8        0004E6
-__end_of_DEFAULT_ISR            text9        00049A
-__end_of_GpioSetup              text7        0004B0
-__end_of_InterruptSetup         text6        0004DE
-__end_of_InterruptTimerXus      text2        00038E
-__end_of_SW_ISR                 text10       0004E4
-__end_of_SysTickSetup           text5        000438
-__end_of_SystemSleep            text4        0004C2
-__end_of_TMR1_ISR               text11       0003CA
-__end_of_TMR2_ISR               text12       0004D6
-__end_of_UserAppInitialize      text3        000480
-__end_of_UserAppRun             text1        0002D6
-__end_of__initialization        cinit        000334
-__end_of_main                   text0        000464
-__initialization                cinit        0002D6
+__end_of_ClockSetup             text8        0004E2
+__end_of_DEFAULT_ISR            text9        000496
+__end_of_GpioSetup              text7        0004AC
+__end_of_InterruptSetup         text6        0004DA
+__end_of_InterruptTimerXus      text2        00038A
+__end_of_SW_ISR                 text10       0004E0
+__end_of_SysTickSetup           text5        000434
+__end_of_SystemSleep            text4        0004BE
+__end_of_TMR1_ISR               text11       0003C6
+__end_of_TMR2_ISR               text12       0004D2
+__end_of_UserAppInitialize      text3        00047C
+__end_of_UserAppRun             text1        0002D2
+__end_of__initialization        cinit        000330
+__end_of_main                   text0        000460
+__initialization                cinit        0002D2
 __mediumconst                   mediumconst  000000
 __pbssCOMRAM                    bssCOMRAM    00053A
-__pcinit                        cinit        0002D6
+__pcinit                        cinit        0002D2
 __pcstackCOMRAM                 cstackCOMRAM 000550
 __pdataBANK6                    dataBANK6    000600
 __pdataCOMRAM                   dataCOMRAM   000501
 __pidataBANK6                   idataBANK6   000106
-__pidataCOMRAM                  idataCOMRAM  0003CA
+__pidataCOMRAM                  idataCOMRAM  0003C6
 __pivt0x8                       ivt0x8       000008
 __pnvCOMRAM                     nvCOMRAM     000556
-__ptext0                        text0        000438
+__ptext0                        text0        000434
 __ptext1                        text1        000206
-__ptext10                       text10       0004E0
-__ptext11                       text11       000390
-__ptext12                       text12       0004C4
-__ptext2                        text2        00033A
-__ptext3                        text3        000464
-__ptext4                        text4        0004B0
-__ptext5                        text5        000404
-__ptext6                        text6        0004D6
-__ptext7                        text7        00049A
-__ptext8                        text8        0004E4
-__ptext9                        text9        000480
+__ptext10                       text10       0004DC
+__ptext11                       text11       00038C
+__ptext12                       text12       0004C0
+__ptext2                        text2        000336
+__ptext3                        text3        000460
+__ptext4                        text4        0004AC
+__ptext5                        text5        000400
+__ptext6                        text6        0004D2
+__ptext7                        text7        000496
+__ptext8                        text8        0004E0
+__ptext9                        text9        00047C
 __ramtop                        ramtop       002600
 __size_of_ClockSetup            (abs)        000000
 __size_of_DEFAULT_ISR           (abs)        000000
@@ -589,8 +589,8 @@ __size_of_UserAppInitialize     (abs)        000000
 __size_of_UserAppRun            (abs)        000000
 __size_of_main                  (abs)        000000
 __smallconst                    smallconst   000000
-_main                           text0        000438
-end_of_initialization           cinit        000334
+_main                           text0        000434
+end_of_initialization           cinit        000330
 intlevel0                       text         000000
 intlevel1                       text         000000
 intlevel2                       text         000000
@@ -600,7 +600,7 @@ ivt0x8_undefint                 ivt0x8       000100
 stackhi                         (abs)        0025FF
 stacklo                         (abs)        000700
 start                           init         000102
-start_initialization            cinit        0002D6
+start_initialization            cinit        0002D2
 
 
 FUNCTION INFORMATION:
@@ -1003,36 +1003,36 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 encm369_pic18.c
-		_GpioSetup     		CODE           	049A	0000	22
-		_SystemSleep   		CODE           	04B0	0000	18
-		_SysTickSetup  		CODE           	0404	0000	52
-		_ClockSetup    		CODE           	04E4	0000	2
+		_GpioSetup     		CODE           	0496	0000	22
+		_SystemSleep   		CODE           	04AC	0000	18
+		_SysTickSetup  		CODE           	0400	0000	52
+		_ClockSetup    		CODE           	04E0	0000	2
 
 encm369_pic18.c estimated size: 94
 
 interrupts.c
-		_TMR2_ISR      		CODE           	04C4	0000	18
-		_DEFAULT_ISR   		CODE           	0480	0000	26
-		_InterruptSetup		CODE           	04D6	0000	8
-		_SW_ISR        		CODE           	04E0	0000	4
-		_TMR1_ISR      		CODE           	0390	0000	58
+		_TMR2_ISR      		CODE           	04C0	0000	18
+		_DEFAULT_ISR   		CODE           	047C	0000	26
+		_InterruptSetup		CODE           	04D2	0000	8
+		_SW_ISR        		CODE           	04DC	0000	4
+		_TMR1_ISR      		CODE           	038C	0000	58
 
 interrupts.c estimated size: 114
 
 shared
-		__initialization		CODE           	02D6	0000	94
+		__initialization		CODE           	02D2	0000	94
 
 shared estimated size: 94
 
 main.c
-		_main          		CODE           	0438	0000	44
+		_main          		CODE           	0434	0000	44
 
 main.c estimated size: 44
 
 user_app.c
-		_UserAppRun    		CODE           	0206	0000	208
-		_InterruptTimerXus		CODE           	033A	0000	84
-		_UserAppInitialize		CODE           	0464	0000	28
+		_UserAppRun    		CODE           	0206	0000	204
+		_InterruptTimerXus		CODE           	0336	0000	84
+		_UserAppInitialize		CODE           	0460	0000	28
 
-user_app.c estimated size: 320
+user_app.c estimated size: 316
 

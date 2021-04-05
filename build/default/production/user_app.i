@@ -27444,14 +27444,20 @@ void UserAppRun(void)
 
     u16Notetime = G_au16NoteDuration[u8Indexmusic];
 
-    if(u8Indexmusic < 14)
-    {
+
+
 
         if(u16Notetimecount == u16Notetime)
         {
             if(u16TimebetweenNotes == (u16)50)
             {
                  u8Indexmusic++;
+
+                 if(u8Indexmusic >= 14)
+                 {
+                   u8Indexmusic = 0;
+                 }
+
                  u16Notetimecount = 0;
                  u16TimebetweenNotes = 0;
                  SameNote = 1;
@@ -27474,11 +27480,5 @@ void UserAppRun(void)
         {
             InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], 1);
         }
-    }
-
-    else
-    {
-        u8Indexmusic = 0;
-    }
 
 }

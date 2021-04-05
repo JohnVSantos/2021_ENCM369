@@ -213,20 +213,20 @@
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
 {
 "243
-[v UserAppRun@G_au16TwinkleStar G_au16TwinkleStar `[14]us  1 s 28 G_au16TwinkleStar ]
-"248
-[v UserAppRun@G_au16NoteDuration G_au16NoteDuration `[14]us  1 s 28 G_au16NoteDuration ]
-"253
-[v UserAppRun@u8Indexmusic u8Indexmusic `uc  1 s 1 u8Indexmusic ]
-"254
-[v UserAppRun@u16Notetime u16Notetime `us  1 s 2 u16Notetime ]
-"255
-[v UserAppRun@u16Notetimecount u16Notetimecount `us  1 s 2 u16Notetimecount ]
-"256
-[v UserAppRun@u16TimebetweenNotes u16TimebetweenNotes `us  1 s 2 u16TimebetweenNotes ]
+[v UserAppRun@G_au16OCanada G_au16OCanada `[10]us  1 s 20 G_au16OCanada ]
+"250
+[v UserAppRun@G_au16NoteDuration G_au16NoteDuration `[10]us  1 s 20 G_au16NoteDuration ]
 "257
+[v UserAppRun@u8Indexmusic u8Indexmusic `uc  1 s 1 u8Indexmusic ]
+"258
+[v UserAppRun@u16Notetime u16Notetime `us  1 s 2 u16Notetime ]
+"259
+[v UserAppRun@u16Notetimecount u16Notetimecount `us  1 s 2 u16Notetimecount ]
+"260
+[v UserAppRun@u16TimebetweenNotes u16TimebetweenNotes `us  1 s 2 u16TimebetweenNotes ]
+"261
 [v UserAppRun@SameNote SameNote `a  1 s 1 SameNote ]
-"304
+"308
 } 0
 "147
 [v _InterruptTimerXus InterruptTimerXus `(v  1 e 1 0 ]

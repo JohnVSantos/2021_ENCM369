@@ -32,6 +32,7 @@ Definitions for musical notes
 
 /* Musical note definitions: 1/64th the total period in us */
 
+#define NOTE_B4                   (u16)32  // f = 494 
 #define NOTE_C4                   (u16)60  // f = 262 /* Middle C */
 #define NOTE_D4                   (u16)53  // f = 294
 #define NOTE_E4                   (u16)47  // f = 330
@@ -41,6 +42,8 @@ Definitions for musical notes
 #define NOTE_NONE                 (u16)0
 
 /* Musical note definitions - short hand */
+
+#define B4                   (u16)NOTE_B4
 #define C4                   (u16)NOTE_C4  /* Middle C */
 #define D4                   (u16)NOTE_D4
 #define E4                   (u16)NOTE_E4

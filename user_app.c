@@ -238,16 +238,20 @@ Promises:
 */
 void UserAppRun(void)
 {
-    //Note UserAppRun is run every 1ms.
+    //Note UserAppRun is run every 1ms.\
     
-    static u16 G_au16TwinkleStar[] =
+    static u16 G_au16OCanada[] =
     {
-    C4, C4, G4, G4, A4, A4, G4, F4, F4, E4, E4, D4, D4, C4    
+    //C4, C4, G4, G4, A4, A4, G4, F4, F4, E4, E4, D4, D4, C4   
+        
+     F4, A4, A4, D4, E4, F4, G4, A4, B4, E4
     };
 
     static u16 G_au16NoteDuration[] = 
     {
-    N4, N4, N4, N4, N4, N4, N2, N4, N4, N4, N4, N4, N4, N2    
+    //N4, N4, N4, N4, N4, N4, N2, N4, N4, N4, N4, N4, N4, N2
+        
+     N2, N2, N4, N2, N4, N4, N4, N4, N4, N2
     };
     
     static u8 u8Indexmusic = 0;             //States the index of the music notes
@@ -267,7 +271,7 @@ void UserAppRun(void)
              u8Indexmusic++;
              
              //This if block statement is true if the array of the music notes has been reached
-             if(u8Indexmusic >= 14)
+             if(u8Indexmusic >= 10)
              {
                u8Indexmusic = 0; 
              } 
@@ -298,7 +302,7 @@ void UserAppRun(void)
     //This if block statement is true if the NoteDuration has not yet been fulfilled so we keep playing the same note
     if(SameNote)
     {
-        InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], true);
+        InterruptTimerXus(G_au16OCanada[u8Indexmusic], true);
     }
     
 } /* end UserAppRun() */

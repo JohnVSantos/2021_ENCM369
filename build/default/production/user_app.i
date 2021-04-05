@@ -27427,14 +27427,18 @@ void UserAppRun(void)
 {
 
 
-    static u16 G_au16TwinkleStar[] =
+    static u16 G_au16OCanada[] =
     {
-    (u16)(u16)60, (u16)(u16)60, (u16)(u16)40, (u16)(u16)40, (u16)(u16)36, (u16)(u16)36, (u16)(u16)40, (u16)(u16)45, (u16)(u16)45, (u16)(u16)47, (u16)(u16)47, (u16)(u16)53, (u16)(u16)53, (u16)(u16)60
+
+
+     (u16)(u16)45, (u16)(u16)36, (u16)(u16)36, (u16)(u16)53, (u16)(u16)47, (u16)(u16)45, (u16)(u16)40, (u16)(u16)36, (u16)(u16)32, (u16)(u16)47
     };
 
     static u16 G_au16NoteDuration[] =
     {
-    (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 2), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 2)
+
+
+     (u16)((u16)2048 / 2), (u16)((u16)2048 / 2), (u16)((u16)2048 / 4), (u16)((u16)2048 / 2), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 4), (u16)((u16)2048 / 2)
     };
 
     static u8 u8Indexmusic = 0;
@@ -27454,7 +27458,7 @@ void UserAppRun(void)
              u8Indexmusic++;
 
 
-             if(u8Indexmusic >= 14)
+             if(u8Indexmusic >= 10)
              {
                u8Indexmusic = 0;
              }
@@ -27485,7 +27489,7 @@ void UserAppRun(void)
 
     if(SameNote)
     {
-        InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], 1);
+        InterruptTimerXus(G_au16OCanada[u8Indexmusic], 1);
     }
 
 }

@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\johns\AppData\Local\Temp\s864.o
+$C:\Users\johns\AppData\Local\Temp\scuo.o
 idloc IDLOC 5 200000 200000 20 1
 init CODE 0 102 102 4 1
 reset_vec CODE 0 0 0 4 1
@@ -194,24 +194,24 @@ $dist/default/production\2021_ENCM369.production.o
 386 text2 CODE >180:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
 388 text2 CODE >182:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
 206 text1 CODE >239:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-206 text1 CODE >258:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-222 text1 CODE >263:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+206 text1 CODE >259:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+222 text1 CODE >262:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
 23A text1 CODE >265:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
 24E text1 CODE >267:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-250 text1 CODE >269:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-260 text1 CODE >271:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-264 text1 CODE >272:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-264 text1 CODE >274:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-26C text1 CODE >275:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-274 text1 CODE >276:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-278 text1 CODE >277:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-27C text1 CODE >280:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-28C text1 CODE >281:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-290 text1 CODE >282:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-298 text1 CODE >289:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-29C text1 CODE >292:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-2AC text1 CODE >294:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
-2D0 text1 CODE >297:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+250 text1 CODE >270:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+260 text1 CODE >272:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+264 text1 CODE >273:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+264 text1 CODE >275:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+26C text1 CODE >276:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+274 text1 CODE >277:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+278 text1 CODE >278:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+27C text1 CODE >283:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+28C text1 CODE >284:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+290 text1 CODE >287:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+298 text1 CODE >295:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+29C text1 CODE >299:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+2AC text1 CODE >301:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
+2D0 text1 CODE >304:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\user_app.c
 434 text0 CODE >34:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\main.c
 434 text0 CODE >36:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\main.c
 436 text0 CODE >39:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\main.c
@@ -224,55 +224,55 @@ $dist/default/production\2021_ENCM369.production.o
 450 text0 CODE >62:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\main.c
 452 text0 CODE >63:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\main.c
 456 text0 CODE >64:C:\Users\johns\Desktop\2ndYear2ndSem\ENCM369\PIC_Activity1\JohnVSantos\2021_ENCM369\main.c
-2D2 cinit CODE >7090:C:\Users\johns\AppData\Local\Temp\s864.s
-2D2 cinit CODE >7092:C:\Users\johns\AppData\Local\Temp\s864.s
-2D2 cinit CODE >7095:C:\Users\johns\AppData\Local\Temp\s864.s
-2D2 cinit CODE >7158:C:\Users\johns\AppData\Local\Temp\s864.s
-2D4 cinit CODE >7159:C:\Users\johns\AppData\Local\Temp\s864.s
-2D6 cinit CODE >7160:C:\Users\johns\AppData\Local\Temp\s864.s
-2D8 cinit CODE >7161:C:\Users\johns\AppData\Local\Temp\s864.s
-2DA cinit CODE >7162:C:\Users\johns\AppData\Local\Temp\s864.s
-2DC cinit CODE >7163:C:\Users\johns\AppData\Local\Temp\s864.s
-2DE cinit CODE >7164:C:\Users\johns\AppData\Local\Temp\s864.s
-2E2 cinit CODE >7165:C:\Users\johns\AppData\Local\Temp\s864.s
-2E6 cinit CODE >7166:C:\Users\johns\AppData\Local\Temp\s864.s
-2E6 cinit CODE >7167:C:\Users\johns\AppData\Local\Temp\s864.s
-2E8 cinit CODE >7168:C:\Users\johns\AppData\Local\Temp\s864.s
-2EC cinit CODE >7169:C:\Users\johns\AppData\Local\Temp\s864.s
-2EE cinit CODE >7170:C:\Users\johns\AppData\Local\Temp\s864.s
-2F0 cinit CODE >7171:C:\Users\johns\AppData\Local\Temp\s864.s
-2F2 cinit CODE >7172:C:\Users\johns\AppData\Local\Temp\s864.s
-2F4 cinit CODE >7173:C:\Users\johns\AppData\Local\Temp\s864.s
-2F6 cinit CODE >7177:C:\Users\johns\AppData\Local\Temp\s864.s
-2F8 cinit CODE >7178:C:\Users\johns\AppData\Local\Temp\s864.s
-2FA cinit CODE >7179:C:\Users\johns\AppData\Local\Temp\s864.s
-2FC cinit CODE >7180:C:\Users\johns\AppData\Local\Temp\s864.s
-2FE cinit CODE >7181:C:\Users\johns\AppData\Local\Temp\s864.s
-300 cinit CODE >7182:C:\Users\johns\AppData\Local\Temp\s864.s
-302 cinit CODE >7183:C:\Users\johns\AppData\Local\Temp\s864.s
-306 cinit CODE >7184:C:\Users\johns\AppData\Local\Temp\s864.s
-30A cinit CODE >7185:C:\Users\johns\AppData\Local\Temp\s864.s
-30A cinit CODE >7186:C:\Users\johns\AppData\Local\Temp\s864.s
-30C cinit CODE >7187:C:\Users\johns\AppData\Local\Temp\s864.s
-310 cinit CODE >7188:C:\Users\johns\AppData\Local\Temp\s864.s
-312 cinit CODE >7189:C:\Users\johns\AppData\Local\Temp\s864.s
-314 cinit CODE >7190:C:\Users\johns\AppData\Local\Temp\s864.s
-316 cinit CODE >7194:C:\Users\johns\AppData\Local\Temp\s864.s
-31A cinit CODE >7195:C:\Users\johns\AppData\Local\Temp\s864.s
-31C cinit CODE >7196:C:\Users\johns\AppData\Local\Temp\s864.s
-31C cinit CODE >7197:C:\Users\johns\AppData\Local\Temp\s864.s
-31E cinit CODE >7198:C:\Users\johns\AppData\Local\Temp\s864.s
-320 cinit CODE >7199:C:\Users\johns\AppData\Local\Temp\s864.s
-322 cinit CODE >7207:C:\Users\johns\AppData\Local\Temp\s864.s
-324 cinit CODE >7208:C:\Users\johns\AppData\Local\Temp\s864.s
-326 cinit CODE >7209:C:\Users\johns\AppData\Local\Temp\s864.s
-328 cinit CODE >7210:C:\Users\johns\AppData\Local\Temp\s864.s
-32A cinit CODE >7211:C:\Users\johns\AppData\Local\Temp\s864.s
-32C cinit CODE >7212:C:\Users\johns\AppData\Local\Temp\s864.s
-32E cinit CODE >7213:C:\Users\johns\AppData\Local\Temp\s864.s
-330 cinit CODE >7219:C:\Users\johns\AppData\Local\Temp\s864.s
-330 cinit CODE >7221:C:\Users\johns\AppData\Local\Temp\s864.s
-332 cinit CODE >7222:C:\Users\johns\AppData\Local\Temp\s864.s
+2D2 cinit CODE >7090:C:\Users\johns\AppData\Local\Temp\scuo.s
+2D2 cinit CODE >7092:C:\Users\johns\AppData\Local\Temp\scuo.s
+2D2 cinit CODE >7095:C:\Users\johns\AppData\Local\Temp\scuo.s
+2D2 cinit CODE >7158:C:\Users\johns\AppData\Local\Temp\scuo.s
+2D4 cinit CODE >7159:C:\Users\johns\AppData\Local\Temp\scuo.s
+2D6 cinit CODE >7160:C:\Users\johns\AppData\Local\Temp\scuo.s
+2D8 cinit CODE >7161:C:\Users\johns\AppData\Local\Temp\scuo.s
+2DA cinit CODE >7162:C:\Users\johns\AppData\Local\Temp\scuo.s
+2DC cinit CODE >7163:C:\Users\johns\AppData\Local\Temp\scuo.s
+2DE cinit CODE >7164:C:\Users\johns\AppData\Local\Temp\scuo.s
+2E2 cinit CODE >7165:C:\Users\johns\AppData\Local\Temp\scuo.s
+2E6 cinit CODE >7166:C:\Users\johns\AppData\Local\Temp\scuo.s
+2E6 cinit CODE >7167:C:\Users\johns\AppData\Local\Temp\scuo.s
+2E8 cinit CODE >7168:C:\Users\johns\AppData\Local\Temp\scuo.s
+2EC cinit CODE >7169:C:\Users\johns\AppData\Local\Temp\scuo.s
+2EE cinit CODE >7170:C:\Users\johns\AppData\Local\Temp\scuo.s
+2F0 cinit CODE >7171:C:\Users\johns\AppData\Local\Temp\scuo.s
+2F2 cinit CODE >7172:C:\Users\johns\AppData\Local\Temp\scuo.s
+2F4 cinit CODE >7173:C:\Users\johns\AppData\Local\Temp\scuo.s
+2F6 cinit CODE >7177:C:\Users\johns\AppData\Local\Temp\scuo.s
+2F8 cinit CODE >7178:C:\Users\johns\AppData\Local\Temp\scuo.s
+2FA cinit CODE >7179:C:\Users\johns\AppData\Local\Temp\scuo.s
+2FC cinit CODE >7180:C:\Users\johns\AppData\Local\Temp\scuo.s
+2FE cinit CODE >7181:C:\Users\johns\AppData\Local\Temp\scuo.s
+300 cinit CODE >7182:C:\Users\johns\AppData\Local\Temp\scuo.s
+302 cinit CODE >7183:C:\Users\johns\AppData\Local\Temp\scuo.s
+306 cinit CODE >7184:C:\Users\johns\AppData\Local\Temp\scuo.s
+30A cinit CODE >7185:C:\Users\johns\AppData\Local\Temp\scuo.s
+30A cinit CODE >7186:C:\Users\johns\AppData\Local\Temp\scuo.s
+30C cinit CODE >7187:C:\Users\johns\AppData\Local\Temp\scuo.s
+310 cinit CODE >7188:C:\Users\johns\AppData\Local\Temp\scuo.s
+312 cinit CODE >7189:C:\Users\johns\AppData\Local\Temp\scuo.s
+314 cinit CODE >7190:C:\Users\johns\AppData\Local\Temp\scuo.s
+316 cinit CODE >7194:C:\Users\johns\AppData\Local\Temp\scuo.s
+31A cinit CODE >7195:C:\Users\johns\AppData\Local\Temp\scuo.s
+31C cinit CODE >7196:C:\Users\johns\AppData\Local\Temp\scuo.s
+31C cinit CODE >7197:C:\Users\johns\AppData\Local\Temp\scuo.s
+31E cinit CODE >7198:C:\Users\johns\AppData\Local\Temp\scuo.s
+320 cinit CODE >7199:C:\Users\johns\AppData\Local\Temp\scuo.s
+322 cinit CODE >7207:C:\Users\johns\AppData\Local\Temp\scuo.s
+324 cinit CODE >7208:C:\Users\johns\AppData\Local\Temp\scuo.s
+326 cinit CODE >7209:C:\Users\johns\AppData\Local\Temp\scuo.s
+328 cinit CODE >7210:C:\Users\johns\AppData\Local\Temp\scuo.s
+32A cinit CODE >7211:C:\Users\johns\AppData\Local\Temp\scuo.s
+32C cinit CODE >7212:C:\Users\johns\AppData\Local\Temp\scuo.s
+32E cinit CODE >7213:C:\Users\johns\AppData\Local\Temp\scuo.s
+330 cinit CODE >7219:C:\Users\johns\AppData\Local\Temp\scuo.s
+330 cinit CODE >7221:C:\Users\johns\AppData\Local\Temp\scuo.s
+332 cinit CODE >7222:C:\Users\johns\AppData\Local\Temp\scuo.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -293,15 +293,15 @@ __Hspace_2 0 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __Hspace_4 60000A 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __HidataBANK6 0 0 ABS 0 idataBANK6 dist/default/production\2021_ENCM369.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\2021_ENCM369.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\johns\AppData\Local\Temp\s864.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\johns\AppData\Local\Temp\scuo.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\2021_ENCM369.production.o
 _T1CONbits 31E 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\2021_ENCM369.production.o
 _LATA 4BE 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 _T2PR 323 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
-___sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\s864.o
+___sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\scuo.o
 _main 434 0 CODE 0 text0 dist/default/production\2021_ENCM369.production.o
-start 102 0 CODE 0 init C:\Users\johns\AppData\Local\Temp\s864.o
+start 102 0 CODE 0 init C:\Users\johns\AppData\Local\Temp\scuo.o
 __size_of_main 0 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\2021_ENCM369.production.o
 _DAC1DATL 7D 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
@@ -312,11 +312,11 @@ __end_of_SW_ISR 4E0 0 CODE 0 text10 dist/default/production\2021_ENCM369.product
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\2021_ENCM369.production.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\2021_ENCM369.production.o
 InterruptTimerXus@u16TimeXus_ 551 0 COMRAM 1 cstackCOMRAM dist/default/production\2021_ENCM369.production.o
-__accesstop 560 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\s864.o
-intlevel0 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\s864.o
-intlevel1 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\s864.o
-intlevel2 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\s864.o
-intlevel3 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\s864.o
+__accesstop 560 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\scuo.o
+intlevel0 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\scuo.o
+intlevel1 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\scuo.o
+intlevel2 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\scuo.o
+intlevel3 0 0 CODE 0 text C:\Users\johns\AppData\Local\Temp\scuo.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\2021_ENCM369.production.o
 _DEFAULT_ISR 47C 0 CODE 0 text9 dist/default/production\2021_ENCM369.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\2021_ENCM369.production.o
@@ -327,8 +327,8 @@ ivt0x8_base 8 0 CODE 0 ivt0x8 dist/default/production\2021_ENCM369.production.o
 _UserAppRun 206 0 CODE 0 text1 dist/default/production\2021_ENCM369.production.o
 _ANSELA 400 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 _G_u32SystemTime1s 53E 0 COMRAM 1 bssCOMRAM dist/default/production\2021_ENCM369.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\s864.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\s864.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\scuo.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\johns\AppData\Local\Temp\scuo.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\2021_ENCM369.production.o
 _DAC1CON 7F 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\2021_ENCM369.production.o
@@ -402,7 +402,7 @@ __Hbank36 0 0 ABS 0 bank36 dist/default/production\2021_ENCM369.production.o
 __Hbank37 0 0 ABS 0 bank37 dist/default/production\2021_ENCM369.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\2021_ENCM369.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\2021_ENCM369.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\johns\AppData\Local\Temp\s864.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\johns\AppData\Local\Temp\scuo.o
 _SystemSleep 4AC 0 CODE 0 text4 dist/default/production\2021_ENCM369.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\2021_ENCM369.production.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/production\2021_ENCM369.production.o
@@ -529,8 +529,8 @@ __end_of_SysTickSetup 434 0 CODE 0 text5 dist/default/production\2021_ENCM369.pr
 _UserAppInitialize 460 0 CODE 0 text3 dist/default/production\2021_ENCM369.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\2021_ENCM369.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\2021_ENCM369.production.o
-stackhi 25FF 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\s864.o
-stacklo 700 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\s864.o
+stackhi 25FF 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\scuo.o
+stacklo 700 0 ABS 0 - C:\Users\johns\AppData\Local\Temp\scuo.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\2021_ENCM369.production.o
 __Livt0x8 8 0 CODE 0 ivt0x8 dist/default/production\2021_ENCM369.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
@@ -567,7 +567,7 @@ _G_u8UserAppTimePeriodLo 54C 0 COMRAM 1 bssCOMRAM dist/default/production\2021_E
 __Ltext10 0 0 ABS 0 text10 dist/default/production\2021_ENCM369.production.o
 __Ltext11 0 0 ABS 0 text11 dist/default/production\2021_ENCM369.production.o
 __Ltext12 0 0 ABS 0 text12 dist/default/production\2021_ENCM369.production.o
-__ramtop 2600 0 RAM 0 ramtop C:\Users\johns\AppData\Local\Temp\s864.o
+__ramtop 2600 0 RAM 0 ramtop C:\Users\johns\AppData\Local\Temp\scuo.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\2021_ENCM369.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\2021_ENCM369.production.o
 DEFAULT_ISR@u32UnhandledCounter 53A 0 COMRAM 1 bssCOMRAM dist/default/production\2021_ENCM369.production.o

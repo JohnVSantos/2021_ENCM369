@@ -238,6 +238,7 @@ Promises:
 */
 void UserAppRun(void)
 {
+    //Note UserAppRun is run every 1ms.
     
     static u16 G_au16TwinkleStar[] =
     {
@@ -249,50 +250,56 @@ void UserAppRun(void)
     N4, N4, N4, N4, N4, N4, N2, N4, N4, N4, N4, N4, N4, N2    
     };
     
-    static u8 u8Indexmusic = 0;
-    static u16 u16Notetime = 0;
-    static u16 u16Notetimecount = 0;
-    static u16 u16TimebetweenNotes = 0;
-    static bool SameNote = true;
+    static u8 u8Indexmusic = 0;             //States the index of the music notes
+    static u16 u16Notetime = 0;             //This is equal to the time of notes depending on the array G_au16NoteDuration
+    static u16 u16Notetimecount = 0;        //This is incremented to wait equal to u16Notetime
+    static u16 u16TimebetweenNotes = 0;     //This allows for the delay between notes and hear individual notes
+    static bool SameNote = true;            //If it is the same note, then keep playing the note. Start at true so we play the first note
     
     u16Notetime = G_au16NoteDuration[u8Indexmusic];
-    
-   // if(u8Indexmusic < 14)
-    
-        
-        if(u16Notetimecount == u16Notetime)
+     
+    //This if block statement is true if the note duration has been fulfilled (quarter notes, half notes)
+    if(u16Notetimecount == u16Notetime)
+    {
+        //This if block statement is true if the delay between notes has been fulfilled
+        if(u16TimebetweenNotes == RT)
         {
-            if(u16TimebetweenNotes == RT)
-            {
-                 u8Indexmusic++;
-                 
-                 if(u8Indexmusic >= 14)
-                 {
-                   u8Indexmusic = 0; 
-                 } 
-                 
-                 u16Notetimecount = 0;
-                 u16TimebetweenNotes = 0;
-                 SameNote = true;
-            }
-            else
-            {
-                InterruptTimerXus(NN, true);
-                u16TimebetweenNotes++;
-                SameNote = false;
-            }
-              
+             u8Indexmusic++;
+             
+             //This if block statement is true if the array of the music notes has been reached
+             if(u8Indexmusic >= 14)
+             {
+               u8Indexmusic = 0; 
+             } 
+
+             u16Notetimecount = 0;
+             u16TimebetweenNotes = 0;
+             SameNote = true;
         }
         
+        //This else block statement describes not to play any notes if we want delay in between the notes
         else
         {
-            u16Notetimecount++;
+            InterruptTimerXus(NN, true);
+            u16TimebetweenNotes++;
+            
+            //This means we have now/will change notes, so do not execute the if statement described below
+            SameNote = false;
         }
-        
-        if(SameNote)
-        {
-            InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], true);
-        }
+
+    }
+    
+    //This else block statement will keep executing until the time of NoteDuration has been fulfilled
+    else
+    {
+        u16Notetimecount++;
+    }
+
+    //This if block statement is true if the NoteDuration has not yet been fulfilled so we keep playing the same note
+    if(SameNote)
+    {
+        InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], true);
+    }
     
 } /* end UserAppRun() */
 

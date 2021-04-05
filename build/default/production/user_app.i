@@ -27426,6 +27426,7 @@ void UserAppInitialize(void)
 void UserAppRun(void)
 {
 
+
     static u16 G_au16TwinkleStar[] =
     {
     (u16)(u16)60, (u16)(u16)60, (u16)(u16)40, (u16)(u16)40, (u16)(u16)36, (u16)(u16)36, (u16)(u16)40, (u16)(u16)45, (u16)(u16)45, (u16)(u16)47, (u16)(u16)47, (u16)(u16)53, (u16)(u16)53, (u16)(u16)60
@@ -27445,40 +27446,46 @@ void UserAppRun(void)
     u16Notetime = G_au16NoteDuration[u8Indexmusic];
 
 
+    if(u16Notetimecount == u16Notetime)
+    {
 
-
-        if(u16Notetimecount == u16Notetime)
+        if(u16TimebetweenNotes == (u16)50)
         {
-            if(u16TimebetweenNotes == (u16)50)
-            {
-                 u8Indexmusic++;
+             u8Indexmusic++;
 
-                 if(u8Indexmusic >= 14)
-                 {
-                   u8Indexmusic = 0;
-                 }
 
-                 u16Notetimecount = 0;
-                 u16TimebetweenNotes = 0;
-                 SameNote = 1;
-            }
-            else
-            {
-                InterruptTimerXus((u16)(u16)0, 1);
-                u16TimebetweenNotes++;
-                SameNote = 0;
-            }
+             if(u8Indexmusic >= 14)
+             {
+               u8Indexmusic = 0;
+             }
 
+             u16Notetimecount = 0;
+             u16TimebetweenNotes = 0;
+             SameNote = 1;
         }
+
 
         else
         {
-            u16Notetimecount++;
+            InterruptTimerXus((u16)(u16)0, 1);
+            u16TimebetweenNotes++;
+
+
+            SameNote = 0;
         }
 
-        if(SameNote)
-        {
-            InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], 1);
-        }
+    }
+
+
+    else
+    {
+        u16Notetimecount++;
+    }
+
+
+    if(SameNote)
+    {
+        InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], 1);
+    }
 
 }

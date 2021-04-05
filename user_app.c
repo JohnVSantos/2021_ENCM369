@@ -252,25 +252,44 @@ void UserAppRun(void)
     static u8 u8Indexmusic = 0;
     static u16 u16Notetime = 0;
     static u16 u16Notetimecount = 0;
+    static u16 u16TimebetweenNotes = 0;
+    static bool SameNote = true;
     
     u16Notetime = G_au16NoteDuration[u8Indexmusic];
     
-    if(u16Notetimecount == u16Notetime)
+    if(u8Indexmusic < 14)
     {
         
-        u8Indexmusic++;
-        u16Notetimecount = 0;
+        if(u16Notetimecount == u16Notetime)
+        {
+            if(u16TimebetweenNotes == RT)
+            {
+                 u8Indexmusic++;
+                 u16Notetimecount = 0;
+                 u16TimebetweenNotes = 0;
+                 SameNote = true;
+            }
+            else
+            {
+                InterruptTimerXus(NN, true);
+                u16TimebetweenNotes++;
+                SameNote = false;
+            }
+              
+        }
         
+        else
+        {
+            u16Notetimecount++;
+        }
+        
+        if(SameNote)
+        {
+            InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], true);
+        }
     }
+    
     else
-    {
-        u16Notetimecount++;
-    }
-    
-    InterruptTimerXus(G_au16TwinkleStar[u8Indexmusic], true);
-    
-    
-    if (u8Indexmusic == 13)
     {
         u8Indexmusic = 0;
     }
